@@ -1,0 +1,63 @@
+.settings-page {
+  background-color: #DDD;
+  padding: 0.5rem 1.5rem;
+  border-radius: 7px;
+}
+.settings-page .settings-title {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding-bottom: 0.5rem;
+}
+.settings-page .settings-title h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.settings-page .settings-form {
+  height: 23rem;
+  width: 100%;
+}
+.settings-page .settings-form .form-group .settings-warnings {
+  font-size: 0.7rem;
+  color: red;
+  text-align: left;
+  height: 1.2rem;
+  padding-left: 0.2rem;
+  position: absolute;
+}
+.settings-page .settings-form .form-group .msg-error {
+  color: red;
+}
+.settings-page .settings-form .form-group .msg-success {
+  color: green;
+}
+.settings-page .settings-form .form-group .form-control {
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+.settings-page .settings-form .nochanges-msg {
+  font-size: 0.9rem;
+  height: 1rem;
+  color: blue;
+  margin-top: 0.5rem;
+}
+.settings-page .settings-form .form-text {
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 0.2rem;
+}
+.settings-page .settings-form .settings-button {
+  margin-top: 0.7rem;
+}
+.settings-page .settings-form .settings-button button {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: indigo;
+  color: #FFF;
+  transition: 0.3s;
+}
+.settings-page .settings-form .settings-button button:hover {
+  background-color: darkviolet;
+}
+
+/*# sourceMappingURL=edit-account.css.map */

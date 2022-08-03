@@ -1,0 +1,25 @@
+.delete-account-page h2 {
+  padding: 1.5rem 0;
+  font-size: 35px;
+}
+.delete-account-page h3 {
+  padding: 1.5rem 0;
+  font-size: 20px;
+}
+.delete-account-page p {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  color: #444;
+}
+.delete-account-page .delete-account-options a {
+  font-size: 18px;
+  margin: 1rem 0;
+  color: #222;
+  transition: 0.1s;
+}
+.delete-account-page a:hover {
+  font-weight: bold;
+  color: royalblue;
+}
+
+/*# sourceMappingURL=delete-account.css.map */

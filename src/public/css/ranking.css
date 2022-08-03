@@ -1,0 +1,33 @@
+.ranking-page {
+  height: 20rem;
+  color: #222;
+}
+.ranking-page .ranking-title h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem 0;
+}
+.ranking-page .ranking-table {
+  font-size: 0.8rem;
+}
+.ranking-page .ranking-table thead {
+  background-color: lightsteelblue;
+}
+.ranking-page .ranking-table thead .table-head {
+  padding: 0.2rem 0;
+}
+.ranking-page .ranking-table thead .head-player {
+  width: 40%;
+}
+.ranking-page .ranking-table thead .head-stats {
+  width: 15%;
+}
+.ranking-page .ranking-table tbody {
+  background-color: #EEE;
+}
+.ranking-page .noplayers-msg {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/*# sourceMappingURL=ranking.css.map */

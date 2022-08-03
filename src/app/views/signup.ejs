@@ -1,0 +1,44 @@
+<link href="css/signup.css" rel="stylesheet">
+
+<div class="row d-flex flex-column justify-content-center align-items-center">
+
+  <div class="signup-page col-8 col-md-6 col-lg-5 col-xxl-4">
+
+    <div class="row d-flex flex-column justify-content-center align-items-center">
+
+      <div class="signup-title">
+        <h2>Sign Up!</h2>
+      </div>
+
+      <form class="signup-form d-flex flex-column justify-content-around">
+
+        <div class="form-group signup-username">
+          <div class="username-error signup-warnings"></div>
+          <input type="text" class="form-control" name="username" placeholder="Username">
+        </div>
+
+        <div class="form-group signup-email">
+          <div class="email-error signup-warnings"></div>
+          <input type="email" class="form-control" name="email" placeholder="Email">
+          <div class="form-text text-muted">We'll never share your email with anyone else.</div>
+        </div>
+    
+        <div class="form-group signup-password">
+          <div class="password-error signup-warnings"></div>
+          <input type="password" class="form-control" name="password" placeholder="Password"> 
+          <div class="form-text text-muted">Password must contain a least 5 characteres</div>
+        </div>
+    
+        <div class="signup-button">
+          <button type="submit" class="btn shadow-none">Sign Up</button>
+        </div>
+        
+      </form>
+
+    </div>
+    
+  </div>
+
+</div>
+
+<script src="js/signup.js"></script>

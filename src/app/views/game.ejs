@@ -1,0 +1,51 @@
+<link href="css/game.css" rel="stylesheet">
+
+<div class="row">
+
+    <div class="game-page col-12">
+
+        <div class="player-id" style="display: none"><%- player._id -%></div>
+    
+        <div class="row">
+
+            <div class="game-hands d-flex justify-content-center">
+        
+                <div class="hand col-2 col-lg-1">
+                    <i class="far fa-hand-rock" onclick="play('rock')"></i>
+                </div>
+        
+                <div class="hand col-2 col-lg-1">
+                    <i class="far fa-hand-paper" onclick="play('paper')"></i>
+                </div>
+        
+                <div class="hand col-2 col-lg-1">
+                    <i class="far fa-hand-scissors" onclick="play('scissors')"></i>
+                </div>
+                
+            </div>
+        
+        </div>
+
+        <div class="row">
+            
+            <div class="game-table d-flex justify-content-center">
+
+                <div class="game-table-hands selected col-3"></div>
+
+                <div class="game-table-hands opponent col-3"></div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="game-result d-flex flex-column justify-content-center align-items-center"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/game.js"></script>

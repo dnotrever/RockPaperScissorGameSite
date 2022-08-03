@@ -1,0 +1,37 @@
+.change-avatar-page .blocked {
+  pointer-events: none;
+}
+.change-avatar-page .avatars-list .player-avatar {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-avatar-page .avatars-list .player-avatar img {
+  cursor: pointer;
+  margin: 1rem;
+  width: 110px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.change-avatar-page .avatars-list .player-avatar img:hover, .change-avatar-page .avatars-list .player-avatar .selected {
+  width: 130px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.change-avatar-page button {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: indigo;
+  margin-top: 3rem;
+  border: none;
+  padding: 0.3rem 0.9rem;
+  transition: 0.3s;
+}
+.change-avatar-page button:hover {
+  background-color: darkviolet;
+}
+
+/*# sourceMappingURL=change-avatar.css.map */

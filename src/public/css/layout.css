@@ -1,0 +1,22 @@
+* {
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper .header-content {
+  border: 3px solid red;
+  height: 5rem;
+}
+.wrapper .main-content {
+  border: 3px solid black;
+  height: 35rem;
+}
+.wrapper .footer-content {
+  border: 3px solid red;
+  height: 5rem;
+}
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,103 @@
+<link href="css/header.css" rel="stylesheet">
+
+<div class="row d-flex justify-content-center">
+
+    <div class="header-title d-flex justify-content-center align-items-center col-4 col-sm-5 col-md-4 col-lg-6 col-xl-7">
+        <h1 class="title-link">
+            <a href="/">RPSGame</a>
+        </h1> 
+    </div>
+
+    <div class="header-nav d-flex flex-column justify-content-center col-6 col-sm-7 col-md-8 col-lg-6 col-xl-5">
+        
+        <div class="row">
+            
+            <% if (player) { %>
+        
+                <div class="header-nav-options player-username col-4 col-sm-6 col-md-6">
+
+                    <div class="d-none d-sm-block">
+                        <a class="profile-link nav-link" href="/profile"><%= player.username %></a>
+                    </div>
+
+                    <div class="d-block d-sm-none">
+                        <a class="nav-link" href="/profile">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </a>
+                    </div>
+
+                </div>
+        
+                <div class="header-nav-options col-4 col-sm-3 col-md-3">
+
+                    <div class="d-none d-md-block">
+                        <a class="second-link nav-link" href="/game">Play Now</a>
+                    </div>
+
+                    <div class="d-block d-md-none">
+                        <a class="nav-link" href="/game">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </a>
+                    </div>
+
+                </div>
+        
+                <div class="header-nav-options col-4 col-sm-3 col-md-3">
+
+                    <div class="d-none d-md-block">
+                        <a class="button logout-btn text-center nav-link" href="/logout">Log out</a>
+                    </div>
+
+                    <div class="d-block d-md-none">
+                        <a class="nav-link" href="/logout">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+
+                </div>
+        
+            <% } else { %>
+        
+                <div class="header-nav-options player-username col-4 col-md-6">
+
+                    <div class="d-none d-sm-block"></div>
+
+                    <div class="d-block d-sm-none"></div>
+
+                </div>
+        
+                <div class="header-nav-options col-4 col-md-3">
+
+                    <div class="d-none d-md-block">
+                        <a class="second-link nav-link second-btn" href="/login">Log in</a>
+                    </div>
+
+                    <div class="d-block d-md-none">
+                        <a class="nav-link" href="/login">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </a>
+                    </div>
+
+                </div>
+        
+                <div class="header-nav-options col-4 col-md-3">
+
+                    <div class="d-none d-md-block">
+                        <a class="button signup-btn text-center nav-link" href="/signup">Sign up</a>
+                    </div>
+
+                    <div class="d-block d-md-none">
+                        <a class="nav-link" href="/signup">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </a>
+                    </div>
+
+                </div>
+        
+            <% } %>
+            
+        </div>
+
+    </div>
+        
+</div>

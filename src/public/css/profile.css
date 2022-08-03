@@ -1,0 +1,53 @@
+.profile-page {
+  color: #222;
+}
+.profile-page .profile-main {
+  text-align: left;
+}
+.profile-page .profile-main .profile-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.profile-page .profile-main .profile-email {
+  font-size: 0.8rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+.profile-page .profile-main .profile-stats {
+  font-size: 0.9rem;
+  width: 70%;
+  margin-top: 1rem;
+}
+.profile-page .profile-main .profile-stats .list-group-item {
+  padding-left: 0;
+}
+.profile-page .profile-aside .profile-avatar .avatar-img {
+  width: 140px;
+}
+.profile-page .profile-aside .profile-avatar .change-avatar a {
+  font-size: 0.7rem;
+  color: #222;
+  transition: 0.4s;
+}
+.profile-page .profile-aside .profile-avatar .change-avatar a:hover {
+  color: royalblue;
+}
+.profile-page .profile-aside .profile-id {
+  font-size: 0.6rem;
+  color: #888;
+  padding: 0.4rem 0;
+}
+.profile-page .profile-aside .profile-account-configs {
+  padding: 0.5rem 0;
+}
+.profile-page .profile-aside .profile-account-configs a {
+  font-size: 0.9rem;
+  color: #222;
+  margin: 0.3rem 0;
+  transition: 0.4s;
+}
+.profile-page .profile-aside .profile-account-configs a:hover {
+  color: royalblue;
+}
+
+/*# sourceMappingURL=profile.css.map */

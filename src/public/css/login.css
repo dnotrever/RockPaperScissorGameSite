@@ -1,0 +1,60 @@
+.login-page {
+  background-color: #DDD;
+  padding: 0.5rem 1.5rem;
+  border-radius: 7px;
+}
+.login-page .login-title {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.login-page .login-title h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.login-page .login-form {
+  height: 20rem;
+  width: 100%;
+}
+.login-page .login-form .form-group .login-warnings {
+  font-size: 0.7rem;
+  color: red;
+  text-align: left;
+  height: 1.2rem;
+  padding-left: 0.2rem;
+}
+.login-page .login-form .form-group .form-control {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+.login-page .login-form .form-group .forgot-data {
+  text-align: left;
+  height: 1.2rem;
+  padding-left: 0.2rem;
+}
+.login-page .login-form .form-group .forgot-data p {
+  font-size: 0.7rem;
+}
+.login-page .login-form .form-group .forgot-data a {
+  font-size: 0.7rem;
+  color: navy;
+  transition: 0.4s;
+}
+.login-page .login-form .form-group a:hover {
+  color: midnightblue;
+}
+.login-page .login-form .login-button {
+  margin-top: 1.5rem;
+}
+.login-page .login-form .login-button button {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: indigo;
+  color: #FFF;
+  transition: 0.3s;
+}
+.login-page .login-form .login-button button:hover {
+  background-color: darkviolet;
+}
+
+/*# sourceMappingURL=login.css.map */

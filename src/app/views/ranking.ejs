@@ -1,0 +1,57 @@
+<link href="css/ranking.css" rel="stylesheet">
+
+<div class="row">
+
+    <div class="ranking-page col-12">
+    
+        <div class="row d-flex justify-content-center text-center">
+
+            <div class="ranking-title col-11 col-sm-10 col-md-9 col-lg-7">
+                <h2>Ranking</h2>
+            </div>
+        
+        </div>
+        
+        <div class="row d-flex justify-content-center text-center">
+            
+            <div class="ranking-table col-11 col-sm-10 col-md-9 col-lg-7">
+
+                <table class="table table-bordered table-hover">
+            
+                    <thead>
+                        <tr>
+                            <th class="table-head head-player" scope="col">Player</th>
+                            <th class="table-head head-stats" scope="col">Plays</th>
+                            <th class="table-head head-stats" scope="col">Wins</th>
+                            <th class="table-head head-stats" scope="col">Draws</th>
+                            <th class="table-head head-stats" scope="col">Losses</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <% if (result) { %>
+                            <% result.map(player => { %>
+                                <tr>
+                                    <td><%= player.username %></td>
+                                    <td><%= player.plays %></td>
+                                    <td><%= player.wins %></td>
+                                    <td><%= player.draws %></td>
+                                    <td><%= player.losses %></td>
+                                </tr>
+                            <% }) %>
+                        <% } %>
+                    </tbody>
+            
+                </table>
+
+            </div>
+            
+            <% if (result.length === 0) { %>
+                <p class="noplayers-msg"><%- noPlayers %></p>
+            <% } %>
+            
+        </div>
+    
+    </div>
+
+</div>

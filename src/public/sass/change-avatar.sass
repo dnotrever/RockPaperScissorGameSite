@@ -1,0 +1,42 @@
+.change-avatar-page
+    // border: 3px red solid
+
+    .blocked
+        pointer-events: none
+
+    .avatars-list
+        // border: 3px blue solid
+
+        .player-avatar
+            // border: 3px green solid
+            height: 10rem
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            img
+                // border: 3px purple solid
+                cursor: pointer
+                margin: 1rem
+                width: 110px
+                opacity: .5
+                transition: .3s
+
+            img:hover, .selected
+                width: 130px
+                opacity: 1
+                pointer-events: auto
+
+    button
+        font-size: .9rem
+        letter-spacing: 3px
+        text-transform: uppercase
+        background-color: indigo
+        margin-top: 3rem
+        border: none
+        padding: .3rem .9rem
+        transition: .3s
+
+    button:hover
+        background-color: darkviolet

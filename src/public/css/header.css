@@ -1,0 +1,73 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+.header-title .title-link {
+  margin: 0;
+}
+.header-title .title-link a {
+  font-size: 1.3rem;
+  color: #222;
+  transition: 0.2s;
+}
+.header-title .title-link a:hover {
+  color: mediumblue;
+}
+
+.header-nav .header-nav-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav .header-nav-options .profile-link {
+  font-size: 0.8rem;
+  color: #222;
+  transition: 0.2s;
+}
+.header-nav .header-nav-options .profile-link:hover {
+  color: mediumblue;
+}
+.header-nav .header-nav-options .second-link {
+  font-size: 0.8rem;
+  color: #222;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.header-nav .header-nav-options .second-link:hover {
+  color: mediumblue;
+  letter-spacing: 1.5px;
+}
+.header-nav .header-nav-options .button {
+  font-size: 0.8rem;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.header-nav .header-nav-options .signup-btn {
+  background-color: midnightblue;
+}
+.header-nav .header-nav-options .signup-btn:hover {
+  background-color: darkslateblue;
+}
+.header-nav .header-nav-options .logout-btn {
+  background-color: darkslategrey;
+}
+.header-nav .header-nav-options .logout-btn:hover {
+  background-color: dimgrey;
+}
+.header-nav .header-nav-options .fa-solid {
+  color: #333;
+  font-size: 1.4rem;
+  padding: 0.4rem;
+  transition: 0.2s;
+}
+.header-nav .header-nav-options .fa-solid:hover {
+  color: darkslateblue;
+}
+.header-nav .player-username {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/*# sourceMappingURL=header.css.map */

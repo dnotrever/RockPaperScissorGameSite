@@ -1,0 +1,60 @@
+<link href="css/profile.css" rel="stylesheet">
+
+<div class="row">
+    
+    <div class="profile-page col-12">
+    
+        <div class="row d-flex justify-content-center text-center">
+
+            <div class="profile-main d-flex flex-column justify-content-center col-5 col-md-4 col-lg-3 col-xxl-2">
+        
+                <h2 class="profile-title">
+                    <%= player.username %>
+                </h2>
+        
+                <div class="profile-email">
+                    <%= player.email %>
+                </div>
+                
+                <ul class="profile-stats list-group list-group-flush">
+                    <li class="list-group-item">Plays: <%- player.plays -%></li>
+                    <li class="list-group-item">Wins: <%- player.wins -%></li>
+                    <li class="list-group-item">Draws: <%- player.draws -%></li>
+                    <li class="list-group-item">Losses: <%- player.losses -%></li>
+                </ul>
+        
+            </div>
+        
+            <div class="profile-aside col-5 col-md-4 col-lg-3 col-xxl-2">
+        
+                <div class="profile-avatar">
+        
+                    <img class="avatar-img" src="images/avatars/<%= player.avatar %>.png" alt="player avatar">
+        
+                    <div class="change-avatar">
+                        <a href="/change-avatar">Change Avatar</a>
+                    </div>
+        
+                </div>
+        
+                <div class="profile-id">
+                    <%= player._id %>
+                </div>
+        
+                <div class="profile-account-configs d-flex flex-column">
+        
+                    <a href="/edit-account">Account Settings</a>
+            
+                    <a href="/delete-account">Delete Account</a> 
+        
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js"></script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon.ico" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <title>RPSGame</title>
+</head>
+
+<body>
+
+    <div class="wrapper container">
+
+        <div class="row">
+
+            <div class="header-content d-flex flex-column justify-content-center col-12">
+                <%- include('./partials/header') %>
+            </div>
+
+            <div class="main-content d-flex flex-column justify-content-center text-center col-12">
+                <%- body %>
+            </div>
+
+            <div class="footer-content d-flex flex-column justify-content-end text-center col-12">
+                <%- include ('./partials/footer') %>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
