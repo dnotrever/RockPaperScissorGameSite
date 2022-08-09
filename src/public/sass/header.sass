@@ -8,8 +8,7 @@
 
     .title-link a
         // border: 2px solid orange
-        font-size: 1.3rem
-        color: #222
+        color: #333
         transition: .2s
     
     .title-link a:hover
@@ -24,26 +23,23 @@
         align-items: center
         justify-content: center
 
-        .profile-link
-            font-size: .8rem
-            color: #222
+        .profile-link a
+            color: #333
             transition: .2s
         
-        .profile-link:hover
+        .profile-link a:hover
             color: mediumblue
 
-        .second-link
-            font-size: .8rem
-            color: #222
+        .second-link a
+            color: #333
             text-transform: uppercase
             transition: .2s
         
-        .second-link:hover
+        .second-link a:hover
             color: mediumblue
             letter-spacing: 1.5px
 
-        .button
-            font-size: .8rem
+        .button a
             color: #FFF
             text-transform: uppercase
             letter-spacing: 1.5px
@@ -65,7 +61,6 @@
         
         .fa-solid
             color: #333
-            font-size: 1.4rem
             padding: .4rem
             transition: .2s
         
@@ -76,3 +71,50 @@
         display: flex
         align-items: center
         justify-content: end
+
+@media (max-width: 576px)
+
+    .header-title .title-link a
+        font-size: 1.3rem
+
+    .header-nav .header-nav-options .fa-solid
+        font-size: 1.3rem
+
+@media (min-width: 576px) and (max-width: 768px)
+
+    .header-title .title-link a
+        font-size: 1.3rem
+        
+    .header-nav .header-nav-options .profile-link a
+        font-size: 1rem
+
+    .header-nav .header-nav-options .fa-solid
+        font-size: 1.3rem
+        
+@media (min-width: 768px) and (max-width: 992px)
+
+    .header-title .title-link a
+        font-size: 1.2rem
+
+    .header-nav .header-nav-options .profile-link a
+        font-size: .9rem
+
+    .header-nav .header-nav-options .second-link a
+        font-size: .9rem
+
+    .header-nav .header-nav-options .button a
+        font-size: .9rem
+        
+@media (min-width: 992px)
+
+    .header-title .title-link a
+        font-size: 1.1rem
+
+    .header-nav .header-nav-options .profile-link a
+        font-size: .8rem
+
+    .header-nav .header-nav-options .second-link a
+        font-size: .8rem
+
+    .header-nav .header-nav-options .button a
+        font-size: .8rem

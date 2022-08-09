@@ -1,7 +1,13 @@
 .footer-text {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #333;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 575px) {
+  .footer-text {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

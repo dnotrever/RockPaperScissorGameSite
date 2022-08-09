@@ -1,53 +1,162 @@
 .profile-page {
   color: #222;
 }
-.profile-page .profile-main {
-  text-align: left;
-}
-.profile-page .profile-main .profile-title {
-  font-size: 1.2rem;
-  margin: 0;
-}
-.profile-page .profile-main .profile-email {
-  font-size: 0.8rem;
-  color: #333;
-  margin: 0.5rem 0;
-}
-.profile-page .profile-main .profile-stats {
-  font-size: 0.9rem;
-  width: 70%;
-  margin-top: 1rem;
-}
-.profile-page .profile-main .profile-stats .list-group-item {
-  padding-left: 0;
-}
-.profile-page .profile-aside .profile-avatar .avatar-img {
-  width: 140px;
+.profile-page .profile-aside {
+  padding: 1rem 0;
 }
 .profile-page .profile-aside .profile-avatar .change-avatar a {
-  font-size: 0.7rem;
   color: #222;
   transition: 0.4s;
 }
 .profile-page .profile-aside .profile-avatar .change-avatar a:hover {
   color: royalblue;
 }
-.profile-page .profile-aside .profile-id {
-  font-size: 0.6rem;
-  color: #888;
-  padding: 0.4rem 0;
-}
 .profile-page .profile-aside .profile-account-configs {
   padding: 0.5rem 0;
 }
 .profile-page .profile-aside .profile-account-configs a {
-  font-size: 0.9rem;
   color: #222;
   margin: 0.3rem 0;
   transition: 0.4s;
 }
 .profile-page .profile-aside .profile-account-configs a:hover {
   color: royalblue;
+}
+.profile-page .profile-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-page .profile-main .profile-stats {
+  width: 50%;
+}
+.profile-page .profile-title {
+  margin: 0;
+}
+.profile-page .profile-email {
+  color: #333;
+  margin: 0.3rem 0 1rem 0;
+}
+@media (max-width: 576px) {
+  .profile-page .profile-aside .profile-avatar img {
+    width: 170px;
+    margin-top: 1.5rem;
+  }
+  .profile-page .profile-aside .profile-avatar .change-avatar a {
+    font-size: 1rem;
+  }
+  .profile-page .profile-aside .profile-account-configs a {
+    font-size: 1.4rem;
+  }
+  .profile-page .profile-main .profile-stats {
+    font-size: 1.4rem;
+  }
+  .profile-page .profile-title {
+    font-size: 1.8rem;
+  }
+  .profile-page .profile-email {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .profile-page .profile-aside .profile-avatar img {
+    width: 165px;
+  }
+  .profile-page .profile-aside .profile-avatar .change-avatar a {
+    font-size: 0.9rem;
+  }
+  .profile-page .profile-aside .profile-account-configs a {
+    font-size: 1.3rem;
+  }
+  .profile-page .profile-main .profile-stats ul {
+    font-size: 1.2rem;
+  }
+  .profile-page .profile-title {
+    font-size: 1.7rem;
+  }
+  .profile-page .profile-email {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .profile-page .profile-aside .profile-avatar img {
+    width: 160px;
+  }
+  .profile-page .profile-aside .profile-avatar .change-avatar a {
+    font-size: 0.8rem;
+  }
+  .profile-page .profile-aside .profile-account-configs a {
+    font-size: 1.2rem;
+  }
+  .profile-page .profile-main .profile-stats ul {
+    font-size: 1.1rem;
+  }
+  .profile-page .profile-title {
+    font-size: 1.6rem;
+  }
+  .profile-page .profile-email {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .profile-page .profile-aside .profile-avatar img {
+    width: 155px;
+  }
+  .profile-page .profile-aside .profile-avatar .change-avatar a {
+    font-size: 0.7rem;
+  }
+  .profile-page .profile-aside .profile-account-configs a {
+    font-size: 1.1rem;
+  }
+  .profile-page .profile-main .profile-stats ul {
+    font-size: 1rem;
+  }
+  .profile-page .profile-title {
+    font-size: 1.5rem;
+  }
+  .profile-page .profile-email {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .profile-page .profile-aside .profile-avatar img {
+    width: 155px;
+  }
+  .profile-page .profile-aside .profile-avatar .change-avatar a {
+    font-size: 0.7rem;
+  }
+  .profile-page .profile-aside .profile-account-configs a {
+    font-size: 1.1rem;
+  }
+  .profile-page .profile-main .profile-stats ul {
+    font-size: 1rem;
+  }
+  .profile-page .profile-title {
+    font-size: 1.5rem;
+  }
+  .profile-page .profile-email {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  .profile-page .profile-aside .profile-avatar img {
+    width: 150px;
+  }
+  .profile-page .profile-aside .profile-avatar .change-avatar a {
+    font-size: 0.7rem;
+  }
+  .profile-page .profile-aside .profile-account-configs a {
+    font-size: 1rem;
+  }
+  .profile-page .profile-main .profile-stats ul {
+    font-size: 0.9rem;
+  }
+  .profile-page .profile-title {
+    font-size: 1.4rem;
+  }
+  .profile-page .profile-email {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=profile.css.map */

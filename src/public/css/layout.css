@@ -10,10 +10,18 @@ a {
   height: 5rem;
 }
 .wrapper .main-content {
-  height: 35rem;
+  height: 30rem;
 }
 .wrapper .footer-content {
   height: 5rem;
+}
+@media (max-width: 575px) {
+  .wrapper .header-content {
+    background-color: #EEE;
+  }
+  .wrapper .main-content {
+    height: 42rem;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */
