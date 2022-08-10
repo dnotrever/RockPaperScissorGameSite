@@ -1,35 +1,81 @@
 .ranking-page
     // border: 2px solid purple
-    height: 20rem
     color: #222
 
-    .ranking-title
-        // border: 2px solid green
+    .ranking-title h2
+        margin: 0
+        padding: 1.5rem 0
 
-        h2
-            font-size: 1.2rem
-            margin: 0
-            padding: 1rem 0
+    .ranking-table thead
+        background-color: lightsteelblue
 
-    .ranking-table
-        // border: 2px solid green
-        font-size: .8rem
+    .ranking-table .table-head    
+        padding: .3rem 0
 
-        thead
-            background-color: lightsteelblue
+    .ranking-table .table-head p
+        margin: 0
 
-            .table-head
-                padding: .2rem 0
+    .ranking-table .head-player
+        width: 40%
+    
+    .ranking-table .head-stats
+        width: 15%
 
-            .head-player
-                width: 40%
-            
-            .head-stats
-                width: 15%
-
-        tbody
-            background-color: #EEE
+    .ranking-table tbody
+        background-color: #EEE
     
     .noplayers-msg
-        font-size: .9rem
         color: #666
+    
+    .description
+        color: #777
+        padding: .5rem 0
+        text-align: left
+
+    .description ul
+        margin: 0
+
+@media (max-width: 575px)
+
+    .ranking-page
+        position: absolute
+        top: 6rem
+
+    .ranking-title h2
+        font-size: 1.4rem
+
+    .ranking-table .table-head p
+        font-size: 1rem
+
+    .ranking-table tbody
+        font-size: 1rem
+
+    .description
+        font-size: .7rem
+
+@media (min-width: 576px)
+
+    .ranking-page
+        margin-bottom: 20rem
+
+@media (min-width: 576px) and (max-width: 992px)
+
+    .ranking-title h2
+        font-size: 1.4rem
+
+    .ranking-table .table-head p
+        font-size: .9rem
+
+    .ranking-table tbody
+        font-size: .9rem
+
+@media (min-width: 992px)
+
+    .ranking-title h2
+        font-size: 1.3rem
+
+    .ranking-table .table-head p
+        font-size: .8rem
+
+    .ranking-table tbody
+        font-size: .8rem

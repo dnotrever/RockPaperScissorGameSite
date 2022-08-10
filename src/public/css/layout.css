@@ -10,16 +10,17 @@ a {
   height: 5rem;
 }
 .wrapper .main-content {
-  height: 30rem;
+  height: 42rem;
 }
 .wrapper .footer-content {
   height: 5rem;
 }
+
 @media (max-width: 575px) {
-  .wrapper .header-content {
+  .header-content {
     background-color: #EEE;
   }
-  .wrapper .main-content {
+  .main-content {
     height: 42rem;
   }
 }

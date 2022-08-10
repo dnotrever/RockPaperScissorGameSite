@@ -14,17 +14,33 @@
         
         <div class="row d-flex justify-content-center text-center">
             
-            <div class="ranking-table col-11 col-sm-10 col-md-9 col-lg-7">
+            <div class="ranking-table col-11 col-sm-10 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
 
                 <table class="table table-bordered table-hover">
-            
+ 
                     <thead>
                         <tr>
-                            <th class="table-head head-player" scope="col">Player</th>
-                            <th class="table-head head-stats" scope="col">Plays</th>
-                            <th class="table-head head-stats" scope="col">Wins</th>
-                            <th class="table-head head-stats" scope="col">Draws</th>
-                            <th class="table-head head-stats" scope="col">Losses</th>
+                            <th class="table-head head-player" scope="col">
+                                <p>Player</p>
+                            </th>
+
+                            <th class="table-head head-stats" scope="col">
+                                <p class="d-none d-sm-block">Plays</p>
+                                <p class="d-block d-sm-none">P</p>
+                            </th>
+
+                            <th class="table-head head-stats" scope="col">
+                                <p class="d-none d-sm-block">Wins</p>
+                                <p class="d-block d-sm-none">W</p>
+                            </th>
+                            <th class="table-head head-stats" scope="col">
+                                <p class="d-none d-sm-block">Draws</p>
+                                <p class="d-block d-sm-none">D</p>
+                            </th>
+                            <th class="table-head head-stats" scope="col">
+                                <p class="d-none d-sm-block">Losses</p>
+                                <p class="d-block d-sm-none">L</p>
+                            </th>
                         </tr>
                     </thead>
             
@@ -50,6 +66,19 @@
                 <p class="noplayers-msg"><%- noPlayers %></p>
             <% } %>
             
+        </div>
+
+        <div class="row d-block d-sm-none d-flex justify-content-center text-center">
+
+            <div class="description col-11">
+                <ul>
+                    <li class="list-group-item">P  -  Plays</li>
+                    <li class="list-group-item">W  -  Wins</li>
+                    <li class="list-group-item">D  -  Draws</li>
+                    <li class="list-group-item">L  -  Losses</li>
+                </ul>
+            </div>
+
         </div>
     
     </div>
