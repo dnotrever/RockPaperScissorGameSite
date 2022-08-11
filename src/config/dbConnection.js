@@ -8,11 +8,8 @@ class Connection {
     }
 
     connectMongoDB() {
-
         const dbURI = process.env.DB_URL
-
         this.mongodbConnection = mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
-
     }
 
 }

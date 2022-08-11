@@ -1,81 +1,127 @@
 .ranking-page
-    // border: 2px solid purple
-    color: #222
+    border: 3px solid indigo
+    color: #444
+    margin-top: 2rem
 
-    .ranking-title h2
-        margin: 0
-        padding: 1.5rem 0
+    .ranking-title
+        padding: 1rem 0
 
-    .ranking-table thead
-        background-color: lightsteelblue
+        h2
+            margin: 0
 
-    .ranking-table .table-head    
-        padding: .3rem 0
+    .ranking-table
+        padding: 0
+        width: 100%
 
-    .ranking-table .table-head p
-        margin: 0
+        thead
+            background-color: lightsteelblue
 
-    .ranking-table .head-player
-        width: 40%
-    
-    .ranking-table .head-stats
-        width: 15%
+        .table-head
+            padding: .3rem 0
 
-    .ranking-table tbody
-        background-color: #EEE
+            p
+                margin: 0
+
+        tbody
+            background-color: #EEE
     
     .noplayers-msg
         color: #666
     
-    .description
+    .descriptions
         color: #777
-        padding: .5rem 0
         text-align: left
 
-    .description ul
-        margin: 0
+        ul
+            padding: 0
+            margin: 0
+
+
+// M E D I A S
 
 @media (max-width: 575px)
 
     .ranking-page
-        position: absolute
-        top: 6rem
+        width: 20rem
+
+    .head-player
+        width: 45%
+    
+    .head-stats
+        width: 10%
 
     .ranking-title h2
-        font-size: 1.4rem
-
-    .ranking-table .table-head p
-        font-size: 1rem
-
+        font-size: 1.6rem
+    
+    .ranking-table thead
+        font-size: 0.8rem
+    
     .ranking-table tbody
-        font-size: 1rem
-
-    .description
-        font-size: .7rem
+        font-size: 0.8rem
+            
+    .descriptions ul
+        font-size: 0.6rem
 
 @media (min-width: 576px)
 
     .ranking-page
-        margin-bottom: 20rem
+        width: 30rem
 
-@media (min-width: 576px) and (max-width: 992px)
+    .head-player
+        width: 40%
+    
+    .head-stats
+        width: 15%
+    
+    .ranking-title h2
+        font-size: 1.0rem
+    
+    .ranking-table thead
+        font-size: 1.0rem
+    
+    .ranking-table tbody
+        font-size: 1.0rem
+
+@media (min-width: 768px)
 
     .ranking-title h2
-        font-size: 1.4rem
-
-    .ranking-table .table-head p
-        font-size: .9rem
-
+        font-size: 1.0rem
+    
+    .ranking-table thead
+        font-size: 1.0rem
+    
     .ranking-table tbody
-        font-size: .9rem
+        font-size: 1.0rem
 
 @media (min-width: 992px)
 
     .ranking-title h2
-        font-size: 1.3rem
-
-    .ranking-table .table-head p
-        font-size: .8rem
-
+        font-size: 1.0rem
+    
+    .ranking-table thead
+        font-size: 1.0rem
+    
     .ranking-table tbody
-        font-size: .8rem
+        font-size: 1.0rem
+
+@media (min-width: 1200px)
+
+    .ranking-title h2
+        font-size: 1.0rem
+    
+    .ranking-table thead
+        font-size: 1.0rem
+    
+    .ranking-table tbody
+        font-size: 1.0rem
+
+@media (min-width: 1400px)
+
+    .ranking-title h2
+        font-size: 1.0rem
+    
+    .ranking-table thead
+        font-size: 1.0rem
+    
+    .ranking-table tbody
+        font-size: 1.0rem

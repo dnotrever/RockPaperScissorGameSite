@@ -6,7 +6,7 @@ async function removedPlayer() {
 
     try {
 
-        await fetch('/player-removed', {
+        await fetch('/removed', {
             method: 'POST',
             body: JSON.stringify({ id }),
             headers: {'Content-Type':'application/json'}

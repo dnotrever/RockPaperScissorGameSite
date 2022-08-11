@@ -6,7 +6,7 @@
     
         <div class="row d-flex justify-content-center text-center">
 
-            <div class="ranking-title col-11 col-sm-10 col-md-9 col-lg-7">
+            <div class="ranking-title col-12 col-sm-10 col-md-9 col-lg-7">
                 <h2>Ranking</h2>
             </div>
         
@@ -14,11 +14,12 @@
         
         <div class="row d-flex justify-content-center text-center">
             
-            <div class="ranking-table col-11 col-sm-10 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+            <div class="ranking-table col-12 col-sm-10 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
 
                 <table class="table table-bordered table-hover">
  
                     <thead>
+
                         <tr>
                             <th class="table-head head-player" scope="col">
                                 <p>Player</p>
@@ -42,9 +43,11 @@
                                 <p class="d-block d-sm-none">L</p>
                             </th>
                         </tr>
+
                     </thead>
             
                     <tbody>
+
                         <% if (result) { %>
                             <% result.map(player => { %>
                                 <tr>
@@ -56,6 +59,7 @@
                                 </tr>
                             <% }) %>
                         <% } %>
+
                     </tbody>
             
                 </table>
@@ -68,14 +72,14 @@
             
         </div>
 
-        <div class="row d-block d-sm-none d-flex justify-content-center text-center">
+        <div class="row d-block d-sm-none d-flex justify-content-center">
 
-            <div class="description col-11">
+            <div class="descriptions col-12">
                 <ul>
-                    <li class="list-group-item">P  -  Plays</li>
-                    <li class="list-group-item">W  -  Wins</li>
-                    <li class="list-group-item">D  -  Draws</li>
-                    <li class="list-group-item">L  -  Losses</li>
+                    <li class="list-group-item">P - Plays</li>
+                    <li class="list-group-item">W - Wins</li>
+                    <li class="list-group-item">D - Draws</li>
+                    <li class="list-group-item">L - Losses</li>
                 </ul>
             </div>
 

@@ -1,162 +1,159 @@
 .profile-page {
-  color: #222;
+  border: 3px solid indigo;
+  color: #444;
+  margin-top: 1.5rem;
 }
-.profile-page .profile-aside {
-  padding: 1rem 0;
+.profile-page .profile-email {
+  color: #666;
+  margin-bottom: 1rem;
 }
-.profile-page .profile-aside .profile-avatar .change-avatar a {
-  color: #222;
-  transition: 0.4s;
-}
-.profile-page .profile-aside .profile-avatar .change-avatar a:hover {
-  color: royalblue;
-}
-.profile-page .profile-aside .profile-account-configs {
+.profile-page .profile-avatar {
   padding: 0.5rem 0;
 }
-.profile-page .profile-aside .profile-account-configs a {
-  color: #222;
+.profile-page .profile-avatar .change-avatar {
+  padding: 0.5rem 0;
+}
+.profile-page .profile-avatar .change-avatar a {
+  color: #333;
+  transition: 0.4s;
+}
+.profile-page .profile-avatar .change-avatar a:hover {
+  color: royalblue;
+}
+.profile-page .profile-configs {
+  padding: 0.5rem 0;
+}
+.profile-page .profile-configs a {
+  color: #333;
   margin: 0.3rem 0;
   transition: 0.4s;
 }
-.profile-page .profile-aside .profile-account-configs a:hover {
+.profile-page .profile-configs a:hover {
   color: royalblue;
 }
-.profile-page .profile-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile-page .profile-main .profile-stats {
-  width: 50%;
-}
-.profile-page .profile-title {
-  margin: 0;
-}
-.profile-page .profile-email {
-  color: #333;
-  margin: 0.3rem 0 1rem 0;
+.profile-page .profile-stats {
+  padding: 0.5rem 0;
+  width: 60%;
 }
 
-@media (max-width: 576px) {
-  .profile-aside .profile-avatar img {
-    width: 170px;
-    margin-top: 1.5rem;
-  }
-  .profile-aside .profile-avatar .change-avatar a {
-    font-size: 1rem;
-  }
-  .profile-aside .profile-account-configs a {
-    font-size: 1.4rem;
-  }
-  .profile-main .profile-stats {
-    font-size: 1.4rem;
-  }
-  .profile-title {
-    font-size: 1.8rem;
-  }
-  .profile-email {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .profile-aside .profile-avatar img {
-    width: 165px;
-  }
-  .profile-aside .profile-avatar .change-avatar a {
-    font-size: 0.9rem;
-  }
-  .profile-aside .profile-account-configs a {
-    font-size: 1.3rem;
-  }
-  .profile-main .profile-stats ul {
-    font-size: 1.2rem;
-  }
-  .profile-title {
-    font-size: 1.7rem;
-  }
-  .profile-email {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .profile-aside .profile-avatar img {
-    width: 160px;
-  }
-  .profile-aside .profile-avatar .change-avatar a {
-    font-size: 0.8rem;
-  }
-  .profile-aside .profile-account-configs a {
-    font-size: 1.2rem;
-  }
-  .profile-main .profile-stats ul {
-    font-size: 1.1rem;
-  }
-  .profile-title {
+@media (max-width: 575px) {
+  .profile-title h2 {
     font-size: 1.6rem;
   }
-  .profile-email {
+  .profile-email h3 {
     font-size: 0.8rem;
   }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .profile-aside .profile-avatar img {
-    width: 155px;
+  .profile-avatar img {
+    width: 140px;
   }
-  .profile-aside .profile-avatar .change-avatar a {
-    font-size: 0.7rem;
+  .change-avatar a {
+    font-size: 0.8rem;
   }
-  .profile-aside .profile-account-configs a {
-    font-size: 1.1rem;
-  }
-  .profile-main .profile-stats ul {
+  .profile-account-configs a {
     font-size: 1rem;
   }
-  .profile-title {
-    font-size: 1.5rem;
-  }
-  .profile-email {
-    font-size: 0.7rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .profile-aside .profile-avatar img {
-    width: 155px;
-  }
-  .profile-aside .profile-avatar .change-avatar a {
-    font-size: 0.7rem;
-  }
-  .profile-aside .profile-account-configs a {
-    font-size: 1.1rem;
-  }
-  .profile-main .profile-stats ul {
+  .profile-stats ul {
     font-size: 1rem;
   }
-  .profile-title {
+}
+@media (min-width: 576px) {
+  .profile-title h2 {
     font-size: 1.5rem;
   }
-  .profile-email {
-    font-size: 0.7rem;
+  .profile-email h3 {
+    font-size: 1.3rem;
+  }
+  .profile-avatar img {
+    width: 170px;
+  }
+  .change-avatar {
+    font-size: 0.8rem;
+  }
+  .profile-account-configs a {
+    font-size: 1rem;
+  }
+  .profile-stats ul {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .profile-title h2 {
+    font-size: 1.5rem;
+  }
+  .profile-email h3 {
+    font-size: 1.3rem;
+  }
+  .profile-avatar img {
+    width: 170px;
+  }
+  .change-avatar {
+    font-size: 0.8rem;
+  }
+  .profile-account-configs a {
+    font-size: 1rem;
+  }
+  .profile-stats ul {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  .profile-title h2 {
+    font-size: 1.5rem;
+  }
+  .profile-email h3 {
+    font-size: 1.3rem;
+  }
+  .profile-avatar img {
+    width: 170px;
+  }
+  .change-avatar {
+    font-size: 0.8rem;
+  }
+  .profile-account-configs a {
+    font-size: 1rem;
+  }
+  .profile-stats ul {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .profile-title h2 {
+    font-size: 1.5rem;
+  }
+  .profile-email h3 {
+    font-size: 1.3rem;
+  }
+  .profile-avatar img {
+    width: 170px;
+  }
+  .change-avatar {
+    font-size: 0.8rem;
+  }
+  .profile-account-configs a {
+    font-size: 1rem;
+  }
+  .profile-stats ul {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1400px) {
-  .profile-aside .profile-avatar img {
-    width: 150px;
+  .profile-title h2 {
+    font-size: 1.5rem;
   }
-  .profile-aside .profile-avatar .change-avatar a {
-    font-size: 0.7rem;
+  .profile-email h3 {
+    font-size: 1.3rem;
   }
-  .profile-aside .profile-account-configs a {
+  .profile-avatar img {
+    width: 170px;
+  }
+  .change-avatar {
+    font-size: 0.8rem;
+  }
+  .profile-account-configs a {
     font-size: 1rem;
   }
-  .profile-main .profile-stats ul {
-    font-size: 0.9rem;
-  }
-  .profile-title {
-    font-size: 1.4rem;
-  }
-  .profile-email {
-    font-size: 0.7rem;
+  .profile-stats ul {
+    font-size: 1.3rem;
   }
 }
 

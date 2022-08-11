@@ -1,4 +1,3 @@
-
 var avatarSelect
 
 function selectAvatar(avatar) {
@@ -25,7 +24,7 @@ form.addEventListener('submit', async event => {
 
     try {
 
-        await fetch('/avatar-changed', {
+        await fetch('/avatar', {
             method: 'POST',
             body: JSON.stringify({ id, avatar }),
             headers: {'Content-Type':'application/json'}

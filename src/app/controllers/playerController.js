@@ -6,8 +6,6 @@ class PlayerController {
 
     handleErrors = err => {
 
-        // console.log(err)
-
         let errors = {username: '', email: '', password: ''}
         
         if (err.message === 'incorrect username') {

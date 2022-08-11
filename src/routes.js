@@ -30,20 +30,20 @@ routes.get('/game', requireAuth, (req, res) => {
     res.render('game')
 })
 
-routes.get('/edit-account', requireAuth, (req, res) => {
-    res.render('edit-account')
+routes.get('/settings', requireAuth, (req, res) => {
+    res.render('settings')
 })
 
-routes.get('/change-avatar', requireAuth, (req, res) => {
-    res.render('change-avatar')
+routes.get('/avatar', requireAuth, (req, res) => {
+    res.render('avatar')
 })
 
-routes.get('/delete-account', requireAuth, (req, res) => {
-    res.render('delete-account')
+routes.get('/delete', requireAuth, (req, res) => {
+    res.render('delete')
 })
 
-routes.get('/player-removed', requireAuth, (req, res) => {
-    res.render('player-removed', {layout: 'player-removed'})
+routes.get('/removed', requireAuth, (req, res) => {
+    res.render('removed', {layout: 'removed'})
 })
 
 // POST
@@ -56,10 +56,10 @@ routes.post('/login', playerController.playerLogin)
 
 routes.post('/game', playerController.playerPlays)
 
-routes.post('/edit-account', playerController.playerSettings)
+routes.post('/settings', playerController.playerSettings)
 
-routes.post('/avatar-changed', playerController.playerAvatar)
+routes.post('/avatar', playerController.playerAvatar)
 
-routes.post('/player-removed', playerController.playerRemove)
+routes.post('/removed', playerController.playerRemove)
 
 module.exports = routes

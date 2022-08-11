@@ -1,4 +1,3 @@
-
 const winningMoves = ['rock-scissors','paper-rock','scissors-paper']
 const drawMoves = ['rock-rock','paper-paper','scissors-scissors']
 

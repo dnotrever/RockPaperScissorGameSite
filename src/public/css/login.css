@@ -1,52 +1,42 @@
 .login-page {
-  background-color: #DDD;
-  padding: 0.5rem 1.5rem;
-  border-radius: 7px;
+  border: 3px solid indigo;
+  color: #444;
+  margin-top: 2rem;
+  width: 90%;
 }
 .login-page .login-title {
-  width: 100%;
-  margin: 0.5rem 0;
+  padding: 1rem 0;
 }
 .login-page .login-title h2 {
-  font-size: 1.3rem;
   margin: 0;
 }
 .login-page .login-form {
-  height: 20rem;
-  width: 100%;
+  padding: 0.5rem;
+}
+.login-page .login-form .form-group {
+  margin: 0.5rem 0;
 }
 .login-page .login-form .form-group .login-warnings {
-  font-size: 0.7rem;
   color: red;
   text-align: left;
-  height: 1.2rem;
-  padding-left: 0.2rem;
-}
-.login-page .login-form .form-group .form-control {
-  font-size: 0.9rem;
-  margin: 0.3rem 0;
+  height: 1.5rem;
+  padding: 0.2rem 0;
 }
 .login-page .login-form .form-group .forgot-data {
   text-align: left;
-  height: 1.2rem;
-  padding-left: 0.2rem;
-}
-.login-page .login-form .form-group .forgot-data p {
-  font-size: 0.7rem;
+  padding: 0.2rem 0;
 }
 .login-page .login-form .form-group .forgot-data a {
-  font-size: 0.7rem;
   color: navy;
   transition: 0.4s;
 }
-.login-page .login-form .form-group a:hover {
+.login-page .login-form .form-group .forgot-data a:hover {
   color: midnightblue;
 }
 .login-page .login-form .login-button {
-  margin-top: 1.5rem;
+  margin: 1rem 0;
 }
 .login-page .login-form .login-button button {
-  font-size: 0.9rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: indigo;
@@ -55,6 +45,112 @@
 }
 .login-page .login-form .login-button button:hover {
   background-color: darkviolet;
+}
+
+@media (max-width: 575px) {
+  .login-title {
+    font-size: 1.6rem;
+  }
+  .login-warnings {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .forgot-data {
+    font-size: 0.8rem;
+  }
+  .login-button button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .login-page {
+    background-color: #DDD;
+  }
+  .login-title {
+    font-size: 1rem;
+  }
+  .login-warnings {
+    font-size: 1rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .forgot-data p {
+    font-size: 1rem;
+  }
+  .signup-button button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .login-title {
+    font-size: 1rem;
+  }
+  .login-warnings {
+    font-size: 1rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .forgot-data p {
+    font-size: 1rem;
+  }
+  .signup-button button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .login-title {
+    font-size: 1rem;
+  }
+  .login-warnings {
+    font-size: 1rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .forgot-data p {
+    font-size: 1rem;
+  }
+  .signup-button button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .login-title {
+    font-size: 1rem;
+  }
+  .login-warnings {
+    font-size: 1rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .forgot-data p {
+    font-size: 1rem;
+  }
+  .signup-button button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .login-title {
+    font-size: 1rem;
+  }
+  .login-warnings {
+    font-size: 1rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .forgot-data p {
+    font-size: 1rem;
+  }
+  .signup-button button {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=login.css.map */

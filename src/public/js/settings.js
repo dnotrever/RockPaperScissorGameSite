@@ -32,7 +32,7 @@ form.addEventListener('submit', async event => {
 
     try {
 
-        const res = await fetch('/edit-account', {
+        const res = await fetch('/settings', {
             method: 'POST',
             body: JSON.stringify({ id, username, email, password }),
             headers: {'Content-Type':'application/json'}
