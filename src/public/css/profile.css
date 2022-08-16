@@ -1,39 +1,74 @@
 .profile-page {
   border: 3px solid indigo;
   color: #444;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+}
+.profile-page .profile-aside {
+  border: 3px solid blue;
+  padding: 0.5rem 0;
+  margin: 0.2rem 0;
+}
+.profile-page .profile-aside .profile-avatar {
+  border: 3px solid green;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+.profile-page .profile-aside .profile-avatar img {
+  border: 3px solid yellow;
+}
+.profile-page .profile-aside .profile-avatar a {
+  border: 3px solid yellow;
+  color: #333;
+  transition: 0.4s;
+}
+.profile-page .profile-aside .profile-avatar a:hover {
+  color: royalblue;
+}
+.profile-page .profile-aside .profile-configs {
+  border: 3px solid green;
+  padding: 0.2rem 0;
+}
+.profile-page .profile-aside .profile-configs a {
+  border: 3px solid yellow;
+  color: #333;
+  margin: 0.2rem 0;
+  transition: 0.4s;
+}
+.profile-page .profile-aside .profile-configs a:hover {
+  color: royalblue;
+}
+.profile-page .profile-main {
+  border: 3px solid blue;
+  padding: 0.5rem 0;
+  margin: 0.2rem 0;
+}
+.profile-page .profile-main .profile-stats {
+  border: 3px solid green;
+  padding: 0.2rem 0;
+  width: 60%;
+}
+.profile-page .profile-main .profile-stats ul {
+  border: 3px solid yellow;
+}
+.profile-page .profile-main .profile-stats ul li {
+  padding: 0.3rem 0;
+  border: 3px solid orange;
+}
+.profile-page .profile-title {
+  border: 3px solid green;
+}
+.profile-page .profile-title h2 {
+  margin: 0.2rem 0;
+  border: 3px solid yellow;
 }
 .profile-page .profile-email {
+  border: 3px solid green;
   color: #666;
-  margin-bottom: 1rem;
+  padding: 0;
 }
-.profile-page .profile-avatar {
-  padding: 0.5rem 0;
-}
-.profile-page .profile-avatar .change-avatar {
-  padding: 0.5rem 0;
-}
-.profile-page .profile-avatar .change-avatar a {
-  color: #333;
-  transition: 0.4s;
-}
-.profile-page .profile-avatar .change-avatar a:hover {
-  color: royalblue;
-}
-.profile-page .profile-configs {
-  padding: 0.5rem 0;
-}
-.profile-page .profile-configs a {
-  color: #333;
-  margin: 0.3rem 0;
-  transition: 0.4s;
-}
-.profile-page .profile-configs a:hover {
-  color: royalblue;
-}
-.profile-page .profile-stats {
-  padding: 0.5rem 0;
-  width: 60%;
+.profile-page .profile-email h3 {
+  margin: 0.2rem 0;
+  border: 3px solid yellow;
 }
 
 @media (max-width: 575px) {
@@ -46,7 +81,7 @@
   .profile-avatar img {
     width: 140px;
   }
-  .change-avatar a {
+  .profile-avatar a {
     font-size: 0.8rem;
   }
   .profile-account-configs a {
@@ -54,106 +89,6 @@
   }
   .profile-stats ul {
     font-size: 1rem;
-  }
-}
-@media (min-width: 576px) {
-  .profile-title h2 {
-    font-size: 1.5rem;
-  }
-  .profile-email h3 {
-    font-size: 1.3rem;
-  }
-  .profile-avatar img {
-    width: 170px;
-  }
-  .change-avatar {
-    font-size: 0.8rem;
-  }
-  .profile-account-configs a {
-    font-size: 1rem;
-  }
-  .profile-stats ul {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 768px) {
-  .profile-title h2 {
-    font-size: 1.5rem;
-  }
-  .profile-email h3 {
-    font-size: 1.3rem;
-  }
-  .profile-avatar img {
-    width: 170px;
-  }
-  .change-avatar {
-    font-size: 0.8rem;
-  }
-  .profile-account-configs a {
-    font-size: 1rem;
-  }
-  .profile-stats ul {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 992px) {
-  .profile-title h2 {
-    font-size: 1.5rem;
-  }
-  .profile-email h3 {
-    font-size: 1.3rem;
-  }
-  .profile-avatar img {
-    width: 170px;
-  }
-  .change-avatar {
-    font-size: 0.8rem;
-  }
-  .profile-account-configs a {
-    font-size: 1rem;
-  }
-  .profile-stats ul {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 1200px) {
-  .profile-title h2 {
-    font-size: 1.5rem;
-  }
-  .profile-email h3 {
-    font-size: 1.3rem;
-  }
-  .profile-avatar img {
-    width: 170px;
-  }
-  .change-avatar {
-    font-size: 0.8rem;
-  }
-  .profile-account-configs a {
-    font-size: 1rem;
-  }
-  .profile-stats ul {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 1400px) {
-  .profile-title h2 {
-    font-size: 1.5rem;
-  }
-  .profile-email h3 {
-    font-size: 1.3rem;
-  }
-  .profile-avatar img {
-    width: 170px;
-  }
-  .change-avatar {
-    font-size: 0.8rem;
-  }
-  .profile-account-configs a {
-    font-size: 1rem;
-  }
-  .profile-stats ul {
-    font-size: 1.3rem;
   }
 }
 

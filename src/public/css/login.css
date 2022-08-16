@@ -5,38 +5,55 @@
   width: 90%;
 }
 .login-page .login-title {
-  padding: 1rem 0;
+  border: 3px solid blue;
+  padding: 0.5rem 0;
 }
 .login-page .login-title h2 {
+  border: 3px solid green;
   margin: 0;
 }
 .login-page .login-form {
+  border: 3px solid blue;
   padding: 0.5rem;
 }
 .login-page .login-form .form-group {
+  border: 3px solid green;
   margin: 0.5rem 0;
 }
 .login-page .login-form .form-group .login-warnings {
+  border: 3px solid yellow;
   color: red;
   text-align: left;
   height: 1.5rem;
-  padding: 0.2rem 0;
+  padding-bottom: 0.2rem;
+  margin: 0.2rem 0;
+}
+.login-page .login-form .form-group input {
+  border: 3px solid yellow;
 }
 .login-page .login-form .form-group .forgot-data {
+  border: 3px solid yellow;
   text-align: left;
-  padding: 0.2rem 0;
+  padding: 0;
 }
-.login-page .login-form .form-group .forgot-data a {
+.login-page .login-form .form-group .forgot-data p {
+  margin: 0.3rem 0;
+  border: 3px solid orange;
+}
+.login-page .login-form .form-group .forgot-data p a {
+  border: 3px solid red;
   color: navy;
   transition: 0.4s;
 }
-.login-page .login-form .form-group .forgot-data a:hover {
+.login-page .login-form .form-group .forgot-data p a:hover {
   color: midnightblue;
 }
 .login-page .login-form .login-button {
+  border: 3px solid green;
   margin: 1rem 0;
 }
 .login-page .login-form .login-button button {
+  border: 3px solid yellow;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: indigo;
@@ -48,107 +65,19 @@
 }
 
 @media (max-width: 575px) {
-  .login-title {
+  .login-title h2 {
     font-size: 1.6rem;
   }
   .login-warnings {
     font-size: 0.8rem;
   }
-  .form-control {
+  input {
     font-size: 1rem;
   }
   .forgot-data {
     font-size: 0.8rem;
   }
   .login-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 576px) {
-  .login-page {
-    background-color: #DDD;
-  }
-  .login-title {
-    font-size: 1rem;
-  }
-  .login-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .forgot-data p {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .login-title {
-    font-size: 1rem;
-  }
-  .login-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .forgot-data p {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .login-title {
-    font-size: 1rem;
-  }
-  .login-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .forgot-data p {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .login-title {
-    font-size: 1rem;
-  }
-  .login-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .forgot-data p {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1400px) {
-  .login-title {
-    font-size: 1rem;
-  }
-  .login-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .forgot-data p {
-    font-size: 1rem;
-  }
-  .signup-button button {
     font-size: 1rem;
   }
 }

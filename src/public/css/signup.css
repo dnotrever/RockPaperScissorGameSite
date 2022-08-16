@@ -5,34 +5,47 @@
   width: 90%;
 }
 .signup-page .signup-title {
-  padding: 1rem 0;
+  border: 3px solid blue;
+  padding: 0.5rem 0;
 }
 .signup-page .signup-title h2 {
+  border: 3px solid green;
   margin: 0;
 }
 .signup-page .signup-form {
+  border: 3px solid blue;
   padding: 0.5rem;
 }
 .signup-page .signup-form .form-group {
+  border: 3px solid green;
   margin: 0.5rem 0;
 }
 .signup-page .signup-form .form-group .signup-warnings {
+  border: 3px solid yellow;
   color: red;
   text-align: left;
   height: 1.5rem;
-  padding: 0.2rem 0;
+  padding-bottom: 0.2rem;
+  margin: 0.2rem 0;
+}
+.signup-page .signup-form .form-group input {
+  border: 3px solid yellow;
 }
 .signup-page .signup-form .form-group .form-text {
+  border: 3px solid yellow;
   text-align: left;
-  padding: 0.2rem 0;
+  margin: 0.3rem 0;
 }
-.signup-page .signup-form .form-group .signup-username {
+.signup-page .signup-form .signup-username {
+  border: 3px solid green;
   margin-bottom: 1rem;
 }
 .signup-page .signup-form .signup-button {
+  border: 3px solid green;
   margin: 1rem 0;
 }
 .signup-page .signup-form .signup-button button {
+  border: 3px solid yellow;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: indigo;
@@ -44,105 +57,17 @@
 }
 
 @media (max-width: 575px) {
-  .signup-title {
+  .signup-title h2 {
     font-size: 1.6rem;
   }
   .signup-warnings {
     font-size: 0.8rem;
   }
-  .form-control {
+  input {
     font-size: 1rem;
   }
   .form-text {
-    font-size: 0.8rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 576px) {
-  .signup-page {
-    background-color: #DDD;
-  }
-  .signup-title {
-    font-size: 1rem;
-  }
-  .signup-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .form-text {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .signup-title {
-    font-size: 1rem;
-  }
-  .signup-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .form-text {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .signup-title {
-    font-size: 1rem;
-  }
-  .signup-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .form-text {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .signup-title {
-    font-size: 1rem;
-  }
-  .signup-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .form-text {
-    font-size: 1rem;
-  }
-  .signup-button button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1400px) {
-  .signup-title {
-    font-size: 1rem;
-  }
-  .signup-warnings {
-    font-size: 1rem;
-  }
-  .form-control {
-    font-size: 1rem;
-  }
-  .form-text {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   .signup-button button {
     font-size: 1rem;
