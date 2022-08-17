@@ -1,63 +1,84 @@
 .settings-page {
-  background-color: #DDD;
-  padding: 0.5rem 1.5rem;
-  border-radius: 7px;
+  border: 3px solid ingigo;
+  color: #444;
+  margin-top: 2rem;
+  width: 85%;
 }
 .settings-page .settings-title {
-  width: 100%;
-  margin: 0.5rem 0;
-  padding-bottom: 0.5rem;
+  border: 3px solid blue;
+  padding: 0.5rem 0;
 }
 .settings-page .settings-title h2 {
-  font-size: 1.3rem;
+  border: 3px solid green;
   margin: 0;
 }
 .settings-page .settings-form {
-  height: 23rem;
-  width: 100%;
+  border: 3px solid blue;
+  padding: 0.5rem;
+}
+.settings-page .settings-form .form-group {
+  border: 3px solid green;
+  margin: 0.5rem 0;
 }
 .settings-page .settings-form .form-group .settings-warnings {
-  font-size: 0.7rem;
+  border: 3px solid yellow;
   color: red;
   text-align: left;
-  height: 1.2rem;
-  padding-left: 0.2rem;
-  position: absolute;
+  height: 1.5rem;
+  padding-bottom: 0.2rem;
+  margin: 0.2rem 0;
 }
-.settings-page .settings-form .form-group .msg-error {
-  color: red;
+.settings-page .settings-form .form-group input {
+  border: 3px solid yellow;
 }
-.settings-page .settings-form .form-group .msg-success {
-  color: green;
+.settings-page .settings-form .form-group .form-text {
+  border: 3px solid yellow;
+  text-align: left;
+  margin: 0.3rem 0;
 }
-.settings-page .settings-form .form-group .form-control {
-  font-size: 0.9rem;
-  margin-top: 1.2rem;
-}
-.settings-page .settings-form .nochanges-msg {
-  font-size: 0.9rem;
-  height: 1rem;
+.settings-page .settings-form .settings-message {
+  border: 3px solid green;
+  height: 2rem;
+  padding: 0.2rem 0;
   color: blue;
-  margin-top: 0.5rem;
-}
-.settings-page .settings-form .form-text {
-  font-size: 0.7rem;
-  text-align: left;
-  padding-left: 0.2rem;
 }
 .settings-page .settings-form .settings-button {
-  margin-top: 0.7rem;
+  border: 3px solid green;
+  margin: 1rem 0;
 }
 .settings-page .settings-form .settings-button button {
-  font-size: 0.9rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: indigo;
   color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: indigo;
   transition: 0.3s;
 }
 .settings-page .settings-form .settings-button button:hover {
   background-color: darkviolet;
+}
+
+@media (max-width: 575px) {
+  .settings-title h2 {
+    font-size: 1.4rem;
+  }
+  .settings-warnings {
+    font-size: 0.8rem;
+  }
+  .form-group input {
+    font-size: 0.8rem;
+  }
+  .form-text {
+    font-size: 0.6rem;
+  }
+  .password {
+    font-size: 0.6rem;
+  }
+  .settings-message {
+    font-size: 0.8rem;
+  }
+  .settings-buttun button {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=settings.css.map */

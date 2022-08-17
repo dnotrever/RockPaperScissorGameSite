@@ -1,39 +1,41 @@
 <link href="css/settings.css" rel="stylesheet">
 
-<div class="row d-flex flex-column justify-content-center align-items-center">
+<div class="row
+    d-flex flex-column justify-content-center align-items-center">
 
-    <div class="settings-page col-8 col-md-6 col-lg-5 col-xxl-4">
+    <div class="settings-page
+        d-flex flex-column justify-content-center align-items-center text-center
+        col-8 col-md-6 col-lg-5 col-xxl-4">
     
-        <div class="row d-flex flex-column justify-content-center align-items-center">
+        <div class="row">
 
             <div class="settings-title">
                 <h2>Edit Your Account Infos</h2>
-              </div>
+            </div>
         
-            <form class="settings-form d-flex flex-column justify-content-around">
+            <form class="settings-form
+                d-flex flex-column justify-content-around">
         
                 <div style="display: none" class="playerId"><%- player._id -%></div>
         
                 <div class="form-group settings-username">
-                    <div class="username-success msg-success settings-warnings"></div>
-                    <div class="username-error msg-error settings-warnings"></div>
+                    <div class="username settings-warnings"></div>
                     <input type="text" class="form-control" name="username" placeholder=" New Username">
                 </div>
         
                 <div class="form-group settings-email">
-                    <div class="email-success msg-success settings-warnings"></div>
-                    <div class="email-error msg-error settings-warnings"></div>
+                    <div class="email settings-warnings"></div>
                     <input type="email" class="form-control" name="email" placeholder=" New Email">
                 </div>
             
                 <div class="form-group settings-password">
-                    <div class="password-success msg-success settings-warnings"></div>
-                    <div class="password-error msg-error settings-warnings"></div>
+                    <div class="password settings-warnings"></div>
                     <input type="password" class="form-control" name="password" placeholder=" New Password"> 
                     <div class="form-text text-muted">Password must contain a least 5 characteres</div>
                 </div>
         
-                <div class="nochanges-msg d-flex flex-column justify-content-end"></div>
+                <div class="settings-message
+                    d-flex flex-column justify-content-end"></div>
         
                 <div class="settings-button">
                     <button type="submit" class="btn btn-primary shadow-none">Change</button>

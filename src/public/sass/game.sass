@@ -1,31 +1,29 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
 
 .game-page
-    // border: 2px solid purple
-    height: 22rem
+    border: 3px solid indigo
     color: #222
+    margin-top: 3rem
 
     .game-hands
-        // border: 2px solid green
+        border: 3px solid blue
         
         .hand 
-            // border: 2px solid red
+            border: 3px solid green
             height: 3rem
+            padding: 2rem
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-
             
             i
-                // border: 2px solid blue
-                font-size: 1.6rem
+                border: 3px solid yellow
                 color: #555
                 cursor: pointer
                 transition: .3s
 
             i:hover
-                font-size: 1.8rem
                 color: #222
                 transform: rotate(-45deg)
 
@@ -36,39 +34,76 @@
                 transform: rotate(45deg)
 
     .game-table
-        // border: 2px solid green
-        margin: 6rem 0
+        border: 3px solid blue
+        margin: 5rem 0
 
         .game-table-hands
+            border: 3px solid green
+            height: 6rem
+            padding: 3rem
+            background-color: #EEE
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            height: 6rem
 
         .selected
-            // border: 2px solid red
+            border: 3px solid green
             
             i
-                // border: 2px solid blue
-                font-size: 4rem
+                border: 3px solid yellow
                 transform: rotate(30deg)
 
             .fa-hand-scissors
                 transform: rotate(120deg)
 
         .opponent
-            // border: 2px solid red
+            border: 3px solid green
 
             i
-                // border: 2px solid blue
-                font-size: 4rem
+                border: 3px solid yellow
                 transform: rotate(-30deg)
 
             .fa-hand-scissors
                 transform: rotate(60deg)
 
     .game-result
-        // border: 2px solid green
+        border: 3px solid blue
         height: 3rem
-        font-size: 1.2rem
+
+
+// M E D I A S
+
+@media (max-width: 575px)
+
+    .game-page
+        width: 18rem
+
+    .hand i
+        font-size: 2.0rem
+
+    .game-table-hands
+        font-size: 4.0rem
+
+    .game-result
+        font-size: 1.6rem
+
+@media (min-width: 576px)
+
+
+
+@media (min-width: 768px)
+
+
+
+@media (min-width: 993px)
+
+
+
+@media (min-width: 1200px)
+
+
+
+@media (min-width: 1400px)
+
+

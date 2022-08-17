@@ -1,25 +1,63 @@
-.delete-account-page h2 {
-  padding: 1.5rem 0;
-  font-size: 35px;
+.delete-page {
+  border: 3px solid indigo;
+  color: #444;
+  margin-top: 2rem;
+  padding: 1rem;
 }
-.delete-account-page h3 {
-  padding: 1.5rem 0;
-  font-size: 20px;
+.delete-page .delete-title {
+  border: 3px solid blue;
+  margin: 0.5rem 0;
 }
-.delete-account-page p {
-  padding: 1rem 0;
-  margin-bottom: 1rem;
+.delete-page .delete-title h2 {
+  border: 3px solid green;
+  margin: 0.5rem 0;
+}
+.delete-page .delete-subtitle {
+  border: 3px solid blue;
+}
+.delete-page .delete-subtitle h3 {
+  border: 3px solid green;
+  margin: 0.5rem 0;
+}
+.delete-page .delete-presentation {
+  border: 3px solid blue;
+  margin: 1.5rem 0;
+}
+.delete-page .delete-presentation p {
+  border: 3px solid green;
+  margin: 1rem 0;
   color: #444;
 }
-.delete-account-page .delete-account-options a {
-  font-size: 18px;
-  margin: 1rem 0;
+.delete-page .delete-options {
+  border: 3px solid blue;
+}
+.delete-page .delete-options a {
+  border: 3px solid green;
+  margin: 0.5rem 0;
   color: #222;
   transition: 0.1s;
 }
-.delete-account-page a:hover {
+.delete-page .delete-options a:hover {
   font-weight: bold;
   color: royalblue;
+}
+
+@media (max-width: 575px) {
+  .delete-page {
+    width: 90%;
+  }
+  .delete-title h2 {
+    font-size: 1.4rem;
+  }
+  .delete-subtitle h3 {
+    font-size: 1.2rem;
+  }
+  .delete-presentation p {
+    font-size: 1rem;
+  }
+  .delete-options {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=delete.css.map */

@@ -1,42 +1,78 @@
-.change-avatar-page
-    // border: 3px red solid
+.avatar-page
+    border: 3px solid indigo
+    margin-top: 2rem
 
     .blocked
         pointer-events: none
 
-    .avatars-list
-        // border: 3px blue solid
+    .avatar-list
+        border: 3px solid blue
+        padding: .5rem
 
         .player-avatar
-            // border: 3px green solid
-            height: 10rem
+            border: 3px solid green
+            height: 5rem
             display: flex
+            margin: .3rem
             flex-direction: column
             justify-content: center
             align-items: center
 
             img
-                // border: 3px purple solid
+                border: 3px solid yellow
                 cursor: pointer
                 margin: 1rem
-                width: 110px
                 opacity: .5
                 transition: .3s
 
-            img:hover, .selected
-                width: 130px
+            img:hover
                 opacity: 1
                 pointer-events: auto
 
-    button
-        font-size: .9rem
-        letter-spacing: 3px
-        text-transform: uppercase
-        background-color: indigo
-        margin-top: 3rem
-        border: none
-        padding: .3rem .9rem
-        transition: .3s
+    .avatar-button
+        border: 3px solid blue
+        padding: 1rem 0
+        margin: 1.5rem 0
 
-    button:hover
-        background-color: darkviolet
+        button
+            border: 3px solid green
+            text-transform: uppercase
+            letter-spacing: 1.5px
+            background-color: indigo
+            transition: .3s
+
+        button:hover
+            background-color: darkviolet
+
+
+// M E D I A S
+
+@media (max-width: 575px)
+
+    .player-avatar img
+        width: 70px
+
+    .player-avatar img:hover
+        width: 80px
+		
+    .avatar-button button
+        font-size: 1.0rem
+
+@media (min-width: 576px)
+
+
+
+@media (min-width: 768px)
+
+
+
+@media (min-width: 992px)
+
+
+
+@media (min-width: 1200px)
+
+
+
+@media (min-width: 1400px)
+

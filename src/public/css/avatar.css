@@ -1,37 +1,60 @@
-.change-avatar-page .blocked {
+.avatar-page {
+  border: 3px solid indigo;
+  margin-top: 2rem;
+}
+.avatar-page .blocked {
   pointer-events: none;
 }
-.change-avatar-page .avatars-list .player-avatar {
-  height: 10rem;
+.avatar-page .avatar-list {
+  border: 3px solid blue;
+  padding: 0.5rem;
+}
+.avatar-page .avatar-list .player-avatar {
+  border: 3px solid green;
+  height: 5rem;
   display: flex;
+  margin: 0.3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.change-avatar-page .avatars-list .player-avatar img {
+.avatar-page .avatar-list .player-avatar img {
+  border: 3px solid yellow;
   cursor: pointer;
   margin: 1rem;
-  width: 110px;
   opacity: 0.5;
   transition: 0.3s;
 }
-.change-avatar-page .avatars-list .player-avatar img:hover, .change-avatar-page .avatars-list .player-avatar .selected {
-  width: 130px;
+.avatar-page .avatar-list .player-avatar img:hover {
   opacity: 1;
   pointer-events: auto;
 }
-.change-avatar-page button {
-  font-size: 0.9rem;
-  letter-spacing: 3px;
+.avatar-page .avatar-button {
+  border: 3px solid blue;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+}
+.avatar-page .avatar-button button {
+  border: 3px solid green;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
   background-color: indigo;
-  margin-top: 3rem;
-  border: none;
-  padding: 0.3rem 0.9rem;
   transition: 0.3s;
 }
-.change-avatar-page button:hover {
+.avatar-page .avatar-button button:hover {
   background-color: darkviolet;
+}
+
+@media (max-width: 575px) {
+  .player-avatar img {
+    width: 70px;
+  }
+  .player-avatar img:hover {
+    width: 80px;
+  }
+  .avatar-button button {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=avatar.css.map */

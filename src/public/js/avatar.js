@@ -13,9 +13,9 @@ function selectAvatar(avatar) {
 }
 
 const playerId = document.querySelector('.player-id')
-const form = document.querySelector('form')
+const button = document.querySelector('button')
 
-form.addEventListener('submit', async event => {
+button.addEventListener('click', async event => {
 
     event.preventDefault()
 

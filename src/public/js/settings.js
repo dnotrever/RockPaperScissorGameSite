@@ -1,29 +1,21 @@
-const form = document.querySelector('form')
-const playerId = document.querySelector('.playerId')
+const form = document.querySelector("form")
+const playerId = document.querySelector(".playerId")
 
-const usernameSuccess = document.querySelector('.username-success')
-const emailSuccess = document.querySelector('.email-success')
-const passwordSuccess = document.querySelector('.password-success')
+const usernameMessage = document.querySelector(".username")
+const emailMessage = document.querySelector(".email")
+const passwordMessage = document.querySelector(".password")
 
-const usernameError = document.querySelector('.username-error')
-const emailError = document.querySelector('.email-error')
-const passwordError = document.querySelector('.password-error')
+const noChanges = document.querySelector(".settings-message")
 
-const noChanges = document.querySelector('.nochanges-msg')
-
-form.addEventListener('submit', async event => {
+form.addEventListener("submit", async event => {
 
     event.preventDefault()
 
-    usernameSuccess.textContent = ''
-    emailSuccess.textContent = ''
-    passwordSuccess.textContent = ''
+    usernameMessage.textContent = ""
+    emailMessage.textContent = ""
+    passwordMessage.textContent = ""
 
-    usernameError.textContent = ''
-    emailError.textContent = ''
-    passwordError.textContent = ''
-
-    noChanges.textContent = ''
+    noChanges.textContent = ""
 
     const id = playerId.innerText
     const username = form.username.value
@@ -32,21 +24,44 @@ form.addEventListener('submit', async event => {
 
     try {
 
-        const res = await fetch('/settings', {
-            method: 'POST',
+        const res = await fetch("/settings", {
+            method: "POST",
             body: JSON.stringify({ id, username, email, password }),
-            headers: {'Content-Type':'application/json'}
+            headers: {"Content-Type":"application/json"}
         })
 
         const data = await res.json()
 
-        usernameSuccess.textContent = data.messages.usernameSuccess
-        emailSuccess.textContent = data.messages.emailSuccess
-        passwordSuccess.textContent = data.messages.passwordSuccess
 
-        usernameError.textContent = data.messages.usernameError
-        emailError.textContent = data.messages.emailError
-        passwordError.textContent = data.messages.passwordError
+        if (data.messages.usernameSuccess) {
+            usernameMessage.textContent = data.messages.usernameSuccess
+            usernameMessage.setAttribute("style", "color: green")
+        }
+
+        if (data.messages.usernameError) {
+            usernameMessage.textContent = data.messages.usernameError
+            usernameMessage.setAttribute("style", "color: red")
+        }
+
+        if (data.messages.emailSuccess) {
+            emailMessage.textContent = data.messages.emailSuccess
+            emailMessage.setAttribute("style", "color: green")
+        }
+
+        if (data.messages.emailError) {
+            emailMessage.textContent = data.messages.emailError
+            emailMessage.setAttribute("style", "color: red")
+        }
+
+        if (data.messages.passwordSuccess) {
+            passwordMessage.textContent = data.messages.passwordSuccess
+            passwordMessage.setAttribute("style", "color: green")
+        }
+
+        if (data.messages.passwordError) {
+            passwordMessage.textContent = data.messages.passwordError
+            passwordMessage.setAttribute("style", "color: red")
+        }
 
         noChanges.textContent = data.messages.noChanges
 

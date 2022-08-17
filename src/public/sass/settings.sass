@@ -1,76 +1,103 @@
 .settings-page
-    background-color: #DDD
-    // // border: 2px solid blue
-    padding: .5rem 1.5rem
-    border-radius: 7px
+    border: 3px solid ingigo
+    color: #444
+    margin-top: 2rem
+    width: 85%
 
     .settings-title
-        // border: 2px solid green
-        width: 100%
-        margin: .5rem 0
-        padding-bottom: .5rem
+        border: 3px solid blue
+        padding: .5rem 0
 
         h2
-            font-size: 1.3rem
+            border: 3px solid green
             margin: 0
 
     .settings-form
-        // border: 2px solid green
-        height: 23rem
-        width: 100%
+        border: 3px solid blue
+        padding: .5rem
 
         .form-group
-            // border: 2px solid purple
+            border: 3px solid green
+            margin: .5rem 0
             
             .settings-warnings
-                // border: 2px solid red
-                font-size: .7rem
+                border: 3px solid yellow
                 color: red
                 text-align: left
-                height: 1.2rem
-                padding-left: .2rem
-                position: absolute
+                height: 1.5rem
+                padding-bottom: .2rem
+                margin: .2rem 0
 
-            .msg-error
-                color: red
-            
-            .msg-success
-                color: green
-            
-            .form-control
-                font-size: .9rem
-                margin-top: 1.2rem
-            
-        .settings-username
-            // height: 4.2rem
-                
-        .settings-email
-            // height: 4.2rem
+            input
+                border: 3px solid yellow
+
+            .form-text
+                border: 3px solid yellow
+                text-align: left
+                margin: .3rem 0
         
-        .nochanges-msg
-            // border: 2px solid purple
-            font-size: .9rem
-            height: 1rem
+        .settings-message
+            border: 3px solid green
+            height: 2rem
+            padding: .2rem 0
             color: blue
-            margin-top: .5rem
-        
-        .form-text
-            font-size: .7rem
-            text-align: left
-            padding-left: .2rem
 
         .settings-button
-            // border: 2px solid purple
-            margin-top: .7rem
+            border: 3px solid green
+            margin: 1rem 0
             
             button
-                font-size: .9rem
-                letter-spacing: 3px
-                text-transform: uppercase
-                background-color: indigo
                 color: #FFF
-                // border: none
+                text-transform: uppercase
+                letter-spacing: 1.5px
+                background-color: indigo
                 transition: .3s
 
             button:hover
                 background-color: darkviolet
+
+
+// M E D I A S
+
+@media (max-width: 575px)
+
+    .settings-title h2
+        font-size: 1.4rem
+		
+    .settings-warnings
+        font-size: 0.8rem
+    
+    .form-group input
+        font-size: 0.8rem
+    
+    .form-text
+        font-size: 0.6rem
+
+    .password
+        font-size: 0.6rem
+
+    .settings-message
+        font-size: 0.8rem
+    
+    .settings-buttun button
+        font-size: 1.0rem
+
+@media (min-width: 576px)
+
+
+
+@media (min-width: 768px)
+
+
+
+@media (min-width: 992px)
+
+
+
+@media (min-width: 1200px)
+
+
+
+@media (min-width: 1400px)
+
+
