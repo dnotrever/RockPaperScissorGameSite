@@ -1,12 +1,15 @@
-.footer-text {
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
+.footer-text p {
   color: #666;
 }
 
 @media (max-width: 575px) {
-  .footer-text {
-    font-size: 0.7rem;
+  .footer-text p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) {
+  .footer-text p {
+    font-size: 0.8rem;
   }
 }
 

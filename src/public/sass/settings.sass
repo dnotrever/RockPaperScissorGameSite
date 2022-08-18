@@ -1,27 +1,26 @@
 .settings-page
-    border: 3px solid ingigo
+    // border: 3px solid ingigo
     color: #444
     margin-top: 2rem
-    width: 85%
 
     .settings-title
-        border: 3px solid blue
+        // border: 3px solid blue
         padding: .5rem 0
 
         h2
-            border: 3px solid green
+            // border: 3px solid green
             margin: 0
 
     .settings-form
-        border: 3px solid blue
+        // border: 3px solid blue
         padding: .5rem
 
         .form-group
-            border: 3px solid green
+            // border: 3px solid green
             margin: .5rem 0
             
             .settings-warnings
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 color: red
                 text-align: left
                 height: 1.5rem
@@ -29,22 +28,23 @@
                 margin: .2rem 0
 
             input
-                border: 3px solid yellow
+                // border: 3px solid yellow
 
             .form-text
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 text-align: left
                 margin: .3rem 0
         
         .settings-message
-            border: 3px solid green
-            height: 2rem
+            // border: 3px solid green
+            height: 3rem
             padding: .2rem 0
             color: blue
 
         .settings-button
-            border: 3px solid green
+            // border: 3px solid green
             margin: 1rem 0
+            padding-top: 1rem
             
             button
                 color: #FFF
@@ -71,10 +71,10 @@
         font-size: 0.8rem
     
     .form-text
-        font-size: 0.6rem
+        font-size: 0.7rem
 
     .password
-        font-size: 0.6rem
+        font-size: 0.7rem
 
     .settings-message
         font-size: 0.8rem
@@ -84,20 +84,28 @@
 
 @media (min-width: 576px)
 
+    .settings-page
+        padding: 1rem 2em 0 2rem
+        background-color: #DDD
+        border-radius: 5px
 
+    .settings-title h2
+        font-size: 1.3rem
+		
+    .settings-warnings
+        font-size: 0.7rem
+    
+    .form-group input
+        font-size: 0.8rem
+    
+    .form-text
+        font-size: 0.6rem
 
-@media (min-width: 768px)
+    .password
+        font-size: 0.7rem
 
-
-
-@media (min-width: 992px)
-
-
-
-@media (min-width: 1200px)
-
-
-
-@media (min-width: 1400px)
-
-
+    .settings-message
+        font-size: 0.8rem
+    
+    .settings-buttun button
+        font-size: 0.9rem

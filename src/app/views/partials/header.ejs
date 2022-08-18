@@ -5,15 +5,15 @@
 
     <div class="header-title
         d-flex justify-content-center align-items-center
-        col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-        <h1 class="title-link">
+        col-5 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+        <h1>
             <a href="/">RPSGame</a>
         </h1> 
     </div>
 
     <div class="header-nav
         d-flex flex-column justify-content-center
-        col-6 col-sm-7 col-md-9 col-lg-6 col-xl-7">
+        col-6 col-sm-7 col-md-9 col-lg-8 col-xl-7">
         
         <div class="row">
             
@@ -48,11 +48,12 @@
                     </div>
 
                 </div>
-        
-                <div class="header-nav-options col-4 col-sm-3 col-md-3">
 
-                    <div class="button d-none d-md-block">
-                        <a class="logout-btn text-center nav-link" href="/logout">Log out</a>
+                <div class="header-nav-options
+                    col-4 col-sm-3 col-md-3">
+
+                    <div class="header-button logout-btn d-none d-md-block">
+                        <a class="text-center nav-link" href="/logout">Log out</a>
                     </div>
 
                     <div class="d-block d-md-none">
@@ -65,7 +66,8 @@
         
             <% } else { %>
         
-                <div class="header-nav-options player-username col-4 col-md-6">
+                <div class="header-nav-options player-username
+                    col-4 col-md-6">
 
                     <div class="d-none d-sm-block"></div>
 
@@ -73,7 +75,8 @@
 
                 </div>
         
-                <div class="header-nav-options col-4 col-md-3">
+                <div class="header-nav-options
+                    col-4 col-md-3">
 
                     <div class="second-link d-none d-md-block">
                         <a class="nav-link second-btn" href="/login">Log in</a>
@@ -87,10 +90,11 @@
 
                 </div>
         
-                <div class="header-nav-options col-4 col-md-3">
+                <div class="header-nav-options
+                    col-4 col-md-3">
 
-                    <div class="button d-none d-md-block">
-                        <a class="signup-btn text-center nav-link" href="/signup">Sign up</a>
+                    <div class="header-button signup-btn d-none d-md-block">
+                        <a class="text-center nav-link" href="/signup">Sign up</a>
                     </div>
 
                     <div class="d-block d-md-none">

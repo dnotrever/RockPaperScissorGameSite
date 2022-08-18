@@ -1,70 +1,43 @@
 .ranking-page {
-  border: 3px solid indigo;
   color: #444;
   margin-top: 2rem;
 }
 .ranking-page .ranking-title {
-  border: 3px solid blue;
   padding: 0.5rem 0;
 }
 .ranking-page .ranking-title h2 {
-  border: 3px solid green;
   margin: 0.5rem 0;
 }
 .ranking-page .ranking-table {
-  border: 3px solid blue;
   padding: 0.5rem 0;
   width: 100%;
 }
-.ranking-page .ranking-table table {
-  border: 3px solid green;
-}
 .ranking-page .ranking-table table thead {
-  border: 3px solid yellow;
   background-color: lightsteelblue;
 }
-.ranking-page .ranking-table table thead tr {
-  border: 3px solid orange;
-}
 .ranking-page .ranking-table table thead tr th {
-  border: 3px solid red;
   padding: 0.3rem 0;
 }
 .ranking-page .ranking-table table thead tr th p {
-  border: 3px solid grey;
   margin: 0;
 }
 .ranking-page .ranking-table table tbody {
-  border: 3px solid yellow;
   background-color: #EEE;
 }
-.ranking-page .ranking-table table tbody tr {
-  border: 3px solid orange;
-}
-.ranking-page .ranking-table table tbody tr td {
-  border: 3px solid red;
-}
 .ranking-page .noplayers-msg {
-  border: 3px solid blue;
   color: #666;
 }
 .ranking-page .ranking-descrip {
-  border: 3px solid blue;
   color: #777;
   text-align: left;
 }
 .ranking-page .ranking-descrip ul {
-  border: 3px solid green;
   padding: 0;
   margin: 0;
 }
-.ranking-page .ranking-descrip ul li {
-  border: 3px solid yellow;
-}
-
 @media (max-width: 575px) {
   .ranking-page {
-    width: 21rem;
+    width: 20rem;
   }
   .head-player {
     width: 45%;
@@ -72,6 +45,19 @@
   .head-stats {
     width: 10%;
   }
+}
+@media (min-width: 576px) {
+  .ranking-page {
+    width: 26rem;
+  }
+  .head-player {
+    width: 40%;
+  }
+  .head-stats {
+    width: 15%;
+  }
+}
+@media (max-width: 4000px) {
   .ranking-title h2 {
     font-size: 1.4rem;
   }

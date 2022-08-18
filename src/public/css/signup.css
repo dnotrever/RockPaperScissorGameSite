@@ -1,51 +1,38 @@
 .signup-page {
-  border: 3px solid indigo;
   color: #444;
   margin-top: 2rem;
-  width: 90%;
 }
 .signup-page .signup-title {
-  border: 3px solid blue;
   padding: 0.5rem 0;
 }
 .signup-page .signup-title h2 {
-  border: 3px solid green;
   margin: 0;
 }
 .signup-page .signup-form {
-  border: 3px solid blue;
   padding: 0.5rem;
 }
 .signup-page .signup-form .form-group {
-  border: 3px solid green;
   margin: 0.5rem 0;
 }
 .signup-page .signup-form .form-group .signup-warnings {
-  border: 3px solid yellow;
   color: red;
   text-align: left;
   height: 1.5rem;
   padding-bottom: 0.2rem;
   margin: 0.2rem 0;
 }
-.signup-page .signup-form .form-group input {
-  border: 3px solid yellow;
-}
 .signup-page .signup-form .form-group .form-text {
-  border: 3px solid yellow;
   text-align: left;
   margin: 0.3rem 0;
 }
 .signup-page .signup-form .signup-username {
-  border: 3px solid green;
   margin-bottom: 1rem;
 }
 .signup-page .signup-form .signup-button {
-  border: 3px solid green;
   margin: 1rem 0;
+  padding-top: 2rem;
 }
 .signup-page .signup-form .signup-button button {
-  border: 3px solid yellow;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: indigo;
@@ -61,7 +48,7 @@
     font-size: 1.4rem;
   }
   .signup-warnings {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .form-group input {
     font-size: 0.8rem;
@@ -71,6 +58,28 @@
   }
   .signup-button button {
     font-size: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .signup-page {
+    padding: 1rem 2em 0 2rem;
+    background-color: #DDD;
+    border-radius: 5px;
+  }
+  .signup-title h2 {
+    font-size: 1.3rem;
+  }
+  .signup-warnings {
+    font-size: 0.7rem;
+  }
+  .form-group input {
+    font-size: 0.8rem;
+  }
+  .form-text {
+    font-size: 0.6rem;
+  }
+  .signup-button button {
+    font-size: 0.9rem;
   }
 }
 

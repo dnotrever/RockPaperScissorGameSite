@@ -1,38 +1,27 @@
 .home-page {
-  border: 3px solid indigo;
   color: #444;
   margin-top: 2rem;
   padding: 2rem;
 }
 .home-page .home-title {
-  border: 3px solid blue;
   margin-bottom: 1rem;
 }
 .home-page .home-title h2 {
   margin: 0.5rem 0;
-  border: 3px solid green;
 }
 .home-page .home-subtitle {
-  border: 3px solid blue;
   margin-bottom: 3rem;
 }
 .home-page .home-subtitle h3 {
   margin: 0.5rem 0;
-  border: 3px solid green;
 }
 .home-page .home-presentation {
-  border: 3px solid blue;
   margin-bottom: 6rem;
 }
 .home-page .home-presentation p {
   margin: 0.5rem 0;
-  border: 3px solid green;
-}
-.home-page .ranking-button {
-  border: 3px solid blue;
 }
 .home-page .ranking-button a {
-  border: 3px solid green;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -57,6 +46,20 @@
   }
   .ranking-button a {
     font-size: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .home-title h2 {
+    font-size: 1.5rem;
+  }
+  .home-subtitle h3 {
+    font-size: 1.3rem;
+  }
+  .home-presentation p {
+    font-size: 1.1rem;
+  }
+  .ranking-button a {
+    font-size: 1.1rem;
   }
 }
 

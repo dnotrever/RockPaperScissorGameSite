@@ -1,15 +1,15 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
 
 .game-page
-    border: 3px solid indigo
+    // border: 3px solid indigo
     color: #222
     margin-top: 3rem
 
     .game-hands
-        border: 3px solid blue
+        // border: 3px solid blue
         
         .hand 
-            border: 3px solid green
+            // border: 3px solid green
             height: 3rem
             padding: 2rem
             display: flex
@@ -18,7 +18,7 @@
             align-items: center
             
             i
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 color: #555
                 cursor: pointer
                 transition: .3s
@@ -34,47 +34,49 @@
                 transform: rotate(45deg)
 
     .game-table
-        border: 3px solid blue
+        // border: 3px solid blue
         margin: 5rem 0
 
         .game-table-hands
-            border: 3px solid green
+            // border: 3px solid green
             height: 6rem
             padding: 3rem
-            background-color: #EEE
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
 
         .selected
-            border: 3px solid green
+            // border: 3px solid green
             
             i
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 transform: rotate(30deg)
 
             .fa-hand-scissors
                 transform: rotate(120deg)
 
         .opponent
-            border: 3px solid green
+            // border: 3px solid green
 
             i
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 transform: rotate(-30deg)
 
             .fa-hand-scissors
                 transform: rotate(60deg)
 
     .game-result
-        border: 3px solid blue
+        // border: 3px solid blue
         height: 3rem
 
 
 // M E D I A S
 
 @media (max-width: 575px)
+
+    .game-table .game-table-hands
+        background-color: #EEE
 
     .game-page
         width: 18rem
@@ -90,20 +92,14 @@
 
 @media (min-width: 576px)
 
+    .game-page
+        width: 24rem
 
+    .hand i
+        font-size: 2.0rem
 
-@media (min-width: 768px)
+    .game-table-hands
+        font-size: 4.5rem
 
-
-
-@media (min-width: 993px)
-
-
-
-@media (min-width: 1200px)
-
-
-
-@media (min-width: 1400px)
-
-
+    .game-result
+        font-size: 1.6rem

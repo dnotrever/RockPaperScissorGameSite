@@ -1,24 +1,18 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-.header-title {
-  border: 3px solid indigo;
+.header-title h1 {
+  margin: 0.3rem 0;
+  display: flex;
 }
-.header-title .title-link {
-  margin: 0;
-}
-.header-title .title-link a {
-  border: 2px solid orange;
+.header-title h1 a {
   color: #333;
+  padding: 0.2rem 0.3rem;
   transition: 0.2s;
 }
-.header-title .title-link a:hover {
+.header-title h1 a:hover {
   color: mediumblue;
 }
 
-.header-nav {
-  border: 3px solid indigo;
-}
 .header-nav .header-nav-options {
-  border: 3px solid orange;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +33,7 @@
   color: mediumblue;
   letter-spacing: 1.5px;
 }
-.header-nav .header-nav-options .button a {
+.header-nav .header-nav-options .header-button a {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -47,16 +41,16 @@
   border-radius: 6px;
   transition: 0.2s;
 }
-.header-nav .header-nav-options .signup-btn {
+.header-nav .header-nav-options .signup-btn a {
   background-color: midnightblue;
 }
-.header-nav .header-nav-options .signup-btn:hover {
+.header-nav .header-nav-options .signup-btn a:hover {
   background-color: darkslateblue;
 }
-.header-nav .header-nav-options .logout-btn {
+.header-nav .header-nav-options .logout-btn a {
   background-color: darkslategrey;
 }
-.header-nav .header-nav-options .logout-btn:hover {
+.header-nav .header-nav-options .logout-btn a:hover {
   background-color: dimgrey;
 }
 .header-nav .header-nav-options .fa-solid {
@@ -73,50 +67,36 @@
   justify-content: end;
 }
 
-@media (max-width: 576px) {
-  .header-title .title-link a {
-    font-size: 1.3rem;
+@media (max-width: 575px) {
+  .header-title a {
+    font-size: 1.4rem;
   }
-  .header-nav .header-nav-options .fa-solid {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .header-title .title-link a {
-    font-size: 1.3rem;
-  }
-  .header-nav .header-nav-options .profile-link a {
-    font-size: 1rem;
-  }
-  .header-nav .header-nav-options .fa-solid {
-    font-size: 1.3rem;
+  .fa-solid {
+    font-size: 1.4rem;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  .header-title .title-link a {
-    font-size: 1.2rem;
+@media (min-width: 576px) {
+  .header-title a {
+    font-size: 1.4rem;
   }
-  .header-nav .header-nav-options .profile-link a {
-    font-size: 0.9rem;
+  .fa-solid {
+    font-size: 1.4rem;
   }
-  .header-nav .header-nav-options .second-link a {
-    font-size: 0.9rem;
-  }
-  .header-nav .header-nav-options .button a {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 992px) {
-  .header-title .title-link a {
-    font-size: 1.1rem;
-  }
-  .header-nav .header-nav-options .profile-link a {
+  .profile-link a {
     font-size: 0.8rem;
   }
-  .header-nav .header-nav-options .second-link a {
+}
+@media (min-width: 768px) {
+  .header-title a {
+    font-size: 1.4rem;
+  }
+  .profile-link a {
     font-size: 0.8rem;
   }
-  .header-nav .header-nav-options .button a {
+  .second-link a {
+    font-size: 0.8rem;
+  }
+  .header-button a {
     font-size: 0.8rem;
   }
 }

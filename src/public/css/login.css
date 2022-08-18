@@ -1,47 +1,35 @@
 .login-page {
-  border: 3px solid indigo;
   color: #444;
   margin-top: 2rem;
-  width: 90%;
 }
 .login-page .login-title {
-  border: 3px solid blue;
   padding: 0.5rem 0;
 }
 .login-page .login-title h2 {
-  border: 3px solid green;
   margin: 0;
 }
 .login-page .login-form {
-  border: 3px solid blue;
   padding: 0.5rem;
 }
 .login-page .login-form .form-group {
-  border: 3px solid green;
   margin: 0.5rem 0;
 }
 .login-page .login-form .form-group .login-warnings {
-  border: 3px solid yellow;
   color: red;
   text-align: left;
   height: 1.5rem;
   padding-bottom: 0.2rem;
   margin: 0.2rem 0;
 }
-.login-page .login-form .form-group input {
-  border: 3px solid yellow;
-}
 .login-page .login-form .form-group .forgot-data {
-  border: 3px solid yellow;
   text-align: left;
   padding: 0;
+  margin-top: 0.5rem;
 }
 .login-page .login-form .form-group .forgot-data p {
   margin: 0.3rem 0;
-  border: 3px solid orange;
 }
 .login-page .login-form .form-group .forgot-data p a {
-  border: 3px solid red;
   color: navy;
   transition: 0.4s;
 }
@@ -49,11 +37,10 @@
   color: midnightblue;
 }
 .login-page .login-form .login-button {
-  border: 3px solid green;
   margin: 1rem 0;
+  padding-top: 2rem;
 }
 .login-page .login-form .login-button button {
-  border: 3px solid yellow;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: indigo;
@@ -69,16 +56,38 @@
     font-size: 1.4rem;
   }
   .login-warnings {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .form-group input {
     font-size: 0.8rem;
   }
   .forgot-data {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .login-button button {
     font-size: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .login-page {
+    padding: 1rem 2em 0 2rem;
+    background-color: #DDD;
+    border-radius: 5px;
+  }
+  .login-title h2 {
+    font-size: 1.3rem;
+  }
+  .login-warnings {
+    font-size: 0.7rem;
+  }
+  .form-group input {
+    font-size: 0.8rem;
+  }
+  .forgot-data {
+    font-size: 0.7rem;
+  }
+  .login-button button {
+    font-size: 0.9rem;
   }
 }
 

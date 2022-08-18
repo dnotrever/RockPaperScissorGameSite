@@ -1,75 +1,77 @@
 .profile-page
-    border: 3px solid indigo
+    // border: 3px solid indigo
     color: #444
     margin-top: 2rem
 
     .profile-aside
-        border: 3px solid blue
+        // border: 3px solid blue
         padding: .5rem 0
         margin: .2rem 0
 
         .profile-avatar
-            border: 3px solid green
+            // border: 3px solid green
             padding: .5rem 0
             margin: .5rem 0
 
             img
-                border: 3px solid yellow
+                // border: 3px solid yellow
 
 
             a
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 color: #333
                 transition: .4s
+                margin-top: .5rem
 
             a:hover
                 color: royalblue
         
         .profile-configs
-            border: 3px solid green
+            // border: 3px solid green
             padding: .2rem 0
             
             a
-                border: 3px solid yellow
+                // border: 3px solid yellow
                 color: #333
-                margin: .2rem 0
+                margin: .4rem 0
                 transition: .4s
 
             a:hover
                 color: royalblue
 
     .profile-main
-        border: 3px solid blue
+        // border: 3px solid blue
         padding: .5rem 0
         margin: .2rem 0
 
         .profile-stats
-            border: 3px solid green
+            // border: 3px solid green
             padding: .2rem 0
-            width: 60%
+            width: 70%
+            align-self: center
 
             ul
-                border: 3px solid yellow
+                // border: 3px solid yellow
 
                 li
                     padding: .3rem 0
-                    border: 3px solid orange
+                    // border: 3px solid orange
 
     .profile-title
-        border: 3px solid green
+        // border: 3px solid green
 
         h2
             margin: .2rem 0
-            border: 3px solid yellow
+            // border: 3px solid yellow
 
     .profile-email
-        border: 3px solid green
+        // border: 3px solid green
         color: #666
         padding: 0
 
         h3
             margin: .2rem 0
-            border: 3px solid yellow
+            // border: 3px solid yellow
 
 
 // M E D I A S
@@ -88,7 +90,7 @@
     .profile-avatar a
         font-size: 0.8rem
     
-    .profile-account-configs a
+    .profile-configs a
         font-size: 1.0rem
     
     .profile-stats ul
@@ -96,20 +98,31 @@
 
 @media (min-width: 576px)
 
+    .profile-page
+        width: 25rem
 
+    .profile-stats
+        margin-top: 1rem
+
+    .profile-title h2
+        font-size: 1.3rem
+
+    .profile-email h3
+        font-size: 0.7rem
+
+    .profile-avatar img
+        width: 130px
+    
+    .profile-avatar a
+        font-size: 0.7rem
+    
+    .profile-configs a
+        font-size: 0.9rem
+    
+    .profile-stats ul
+        font-size: 0.9rem
 
 @media (min-width: 768px)
 
-
-
-@media (min-width: 992px)
-
-
-
-@media (min-width: 1200px)
-
-
-
-@media (min-width: 1400px)
-
-
+    .profile-page
+        width: 30rem

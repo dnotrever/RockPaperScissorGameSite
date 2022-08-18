@@ -1,38 +1,21 @@
 .delete-page {
-  border: 3px solid indigo;
   color: #444;
   margin-top: 2rem;
   padding: 1rem;
 }
-.delete-page .delete-title {
-  border: 3px solid blue;
-  margin: 0.5rem 0;
-}
-.delete-page .delete-title h2 {
-  border: 3px solid green;
-  margin: 0.5rem 0;
-}
 .delete-page .delete-subtitle {
-  border: 3px solid blue;
-}
-.delete-page .delete-subtitle h3 {
-  border: 3px solid green;
-  margin: 0.5rem 0;
+  margin-top: 3rem;
 }
 .delete-page .delete-presentation {
-  border: 3px solid blue;
-  margin: 1.5rem 0;
+  margin-top: 2rem;
 }
 .delete-page .delete-presentation p {
-  border: 3px solid green;
-  margin: 1rem 0;
   color: #444;
 }
 .delete-page .delete-options {
-  border: 3px solid blue;
+  margin-top: 3rem;
 }
 .delete-page .delete-options a {
-  border: 3px solid green;
   margin: 0.5rem 0;
   color: #222;
   transition: 0.1s;
@@ -43,9 +26,6 @@
 }
 
 @media (max-width: 575px) {
-  .delete-page {
-    width: 90%;
-  }
   .delete-title h2 {
     font-size: 1.4rem;
   }
@@ -53,10 +33,24 @@
     font-size: 1.2rem;
   }
   .delete-presentation p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .delete-options {
     font-size: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .delete-title h2 {
+    font-size: 1.3rem;
+  }
+  .delete-subtitle h3 {
+    font-size: 1.1rem;
+  }
+  .delete-presentation p {
+    font-size: 0.8rem;
+  }
+  .delete-options {
+    font-size: 0.9rem;
   }
 }
 
