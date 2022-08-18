@@ -1,6 +1,5 @@
 .signup-page {
   color: #444;
-  margin-top: 2rem;
 }
 .signup-page .signup-title {
   padding: 0.5rem 0;
@@ -17,7 +16,7 @@
 .signup-page .signup-form .form-group .signup-warnings {
   color: red;
   text-align: left;
-  height: 1.5rem;
+  height: 1rem;
   padding-bottom: 0.2rem;
   margin: 0.2rem 0;
 }
@@ -44,11 +43,14 @@
 }
 
 @media (max-width: 575px) {
+  .signup-page {
+    margin-top: 3rem;
+  }
   .signup-title h2 {
     font-size: 1.4rem;
   }
   .signup-warnings {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .form-group input {
     font-size: 0.8rem;
@@ -57,12 +59,15 @@
     font-size: 0.6rem;
   }
   .signup-button button {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 576px) {
   .signup-page {
-    padding: 1rem 2em 0 2rem;
+    margin-top: 4rem;
+  }
+  .signup-page {
+    padding: 1rem 2rem;
     background-color: #DDD;
     border-radius: 5px;
   }
@@ -76,10 +81,10 @@
     font-size: 0.8rem;
   }
   .form-text {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .signup-button button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 

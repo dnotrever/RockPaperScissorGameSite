@@ -1,7 +1,6 @@
 .settings-page
     // border: 3px solid ingigo
     color: #444
-    margin-top: 2rem
 
     .settings-title
         // border: 3px solid blue
@@ -19,12 +18,11 @@
             // border: 3px solid green
             margin: .5rem 0
             
-            .settings-warnings
+            p
                 // border: 3px solid yellow
                 color: red
                 text-align: left
-                height: 1.5rem
-                padding-bottom: .2rem
+                height: 1rem
                 margin: .2rem 0
 
             input
@@ -37,7 +35,7 @@
         
         .settings-message
             // border: 3px solid green
-            height: 3rem
+            height: 2.5rem
             padding: .2rem 0
             color: blue
 
@@ -51,6 +49,7 @@
                 text-transform: uppercase
                 letter-spacing: 1.5px
                 background-color: indigo
+                border: none
                 transition: .3s
 
             button:hover
@@ -61,39 +60,14 @@
 
 @media (max-width: 575px)
 
+    .settings-page
+        margin-top: 3rem
+
     .settings-title h2
         font-size: 1.4rem
 		
-    .settings-warnings
-        font-size: 0.8rem
-    
-    .form-group input
-        font-size: 0.8rem
-    
-    .form-text
-        font-size: 0.7rem
-
-    .password
-        font-size: 0.7rem
-
-    .settings-message
-        font-size: 0.8rem
-    
-    .settings-buttun button
-        font-size: 1.0rem
-
-@media (min-width: 576px)
-
-    .settings-page
-        padding: 1rem 2em 0 2rem
-        background-color: #DDD
-        border-radius: 5px
-
-    .settings-title h2
-        font-size: 1.3rem
-		
-    .settings-warnings
-        font-size: 0.7rem
+    .form-group p
+        font-size: 0.6rem
     
     .form-group input
         font-size: 0.8rem
@@ -107,5 +81,34 @@
     .settings-message
         font-size: 0.8rem
     
-    .settings-buttun button
-        font-size: 0.9rem
+    .settings-button button
+        font-size: 0.8rem
+
+@media (min-width: 576px)
+
+    .settings-page
+        padding: 1rem 2em 0 2rem
+        background-color: #DDD
+        border-radius: 5px
+        margin-top: 4rem
+
+    .settings-title h2
+        font-size: 1.3rem
+		
+    .form-group p
+        font-size: 0.7rem
+    
+    .form-group input
+        font-size: 0.8rem
+    
+    .form-text
+        font-size: 0.7rem
+
+    .password
+        font-size: 0.7rem
+
+    .settings-message
+        font-size: 0.8rem
+    
+    .settings-button button
+        font-size: 0.8rem

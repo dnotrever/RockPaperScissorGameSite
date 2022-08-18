@@ -1,6 +1,5 @@
 .login-page {
   color: #444;
-  margin-top: 2rem;
 }
 .login-page .login-title {
   padding: 0.5rem 0;
@@ -17,7 +16,7 @@
 .login-page .login-form .form-group .login-warnings {
   color: red;
   text-align: left;
-  height: 1.5rem;
+  height: 1rem;
   padding-bottom: 0.2rem;
   margin: 0.2rem 0;
 }
@@ -52,11 +51,14 @@
 }
 
 @media (max-width: 575px) {
+  .login-page {
+    margin-top: 3rem;
+  }
   .login-title h2 {
     font-size: 1.4rem;
   }
   .login-warnings {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .form-group input {
     font-size: 0.8rem;
@@ -65,14 +67,15 @@
     font-size: 0.7rem;
   }
   .login-button button {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 576px) {
   .login-page {
-    padding: 1rem 2em 0 2rem;
+    padding: 1rem 2rem;
     background-color: #DDD;
     border-radius: 5px;
+    margin-top: 4rem;
   }
   .login-title h2 {
     font-size: 1.3rem;
@@ -87,7 +90,7 @@
     font-size: 0.7rem;
   }
   .login-button button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 

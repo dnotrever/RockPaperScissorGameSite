@@ -1,21 +1,18 @@
-.avatar-page {
-  margin-top: 2rem;
-}
 .avatar-page .blocked {
   pointer-events: none;
 }
 .avatar-page .avatar-list {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .avatar-page .avatar-list .player-avatar {
   display: flex;
+  height: 8rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .avatar-page .avatar-list .player-avatar img {
   cursor: pointer;
-  margin: 1rem;
   opacity: 0.5;
   transition: 0.3s;
 }
@@ -31,6 +28,7 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   background-color: indigo;
+  border: none;
   transition: 0.3s;
 }
 .avatar-page .avatar-button button:hover {
@@ -38,6 +36,9 @@
 }
 
 @media (max-width: 575px) {
+  .avatar-page {
+    margin-top: 3rem;
+  }
   .player-avatar img {
     width: 70px;
   }
@@ -45,7 +46,7 @@
     width: 80px;
   }
   .avatar-button button {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 576px) {
@@ -56,7 +57,7 @@
     width: 90px;
   }
   .avatar-button button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 

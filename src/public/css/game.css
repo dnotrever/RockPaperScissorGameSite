@@ -1,7 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 .game-page {
   color: #222;
-  margin-top: 3rem;
 }
 .game-page .game-hands .hand {
   height: 3rem;
@@ -54,11 +53,9 @@
 }
 
 @media (max-width: 575px) {
-  .game-table .game-table-hands {
-    background-color: #EEE;
-  }
   .game-page {
     width: 18rem;
+    margin-top: 3rem;
   }
   .hand i {
     font-size: 2rem;
@@ -73,6 +70,7 @@
 @media (min-width: 576px) {
   .game-page {
     width: 24rem;
+    margin-top: 4rem;
   }
   .hand i {
     font-size: 2rem;

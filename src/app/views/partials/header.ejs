@@ -3,24 +3,21 @@
 <div class="row
     d-flex justify-content-center">
 
-    <div class="header-title
-        d-flex justify-content-center align-items-center
-        col-5 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-        <h1>
+    <div class="header-title d-flex justify-content-center align-items-center col-5 col-sm-4 col-md-3 col-lg-4">
+
+        <h1 class="row">
             <a href="/">RPSGame</a>
         </h1> 
+
     </div>
 
-    <div class="header-nav
-        d-flex flex-column justify-content-center
-        col-6 col-sm-7 col-md-9 col-lg-8 col-xl-7">
+    <div class="header-nav d-flex flex-column justify-content-center col-7 col-sm-8 col-md-9 col-lg-8">
         
         <div class="row">
             
             <% if (player) { %>
         
-                <div class="header-nav-options player-username
-                    col-4 col-sm-6 col-md-6">
+                <div class="header-nav-options player-username col-4 col-sm-8 col-md-6 col-lg-7 col-xl-8">
 
                     <div class="profile-link d-none d-sm-block">
                         <a class="nav-link" href="/profile"><%= player.username %></a>
@@ -34,8 +31,7 @@
 
                 </div>
         
-                <div class="header-nav-options
-                    col-4 col-sm-3 col-md-3">
+                <div class="header-nav-options col-4 col-sm-2 col-md-3 col-lg-2 col-xl-2">
 
                     <div class="second-link d-none d-md-block">
                         <a class="nav-link" href="/game">Play Now</a>
@@ -49,8 +45,7 @@
 
                 </div>
 
-                <div class="header-nav-options
-                    col-4 col-sm-3 col-md-3">
+                <div class="header-nav-options col-4 col-sm-2 col-md-3 col-lg-3 col-xl-2">
 
                     <div class="header-button logout-btn d-none d-md-block">
                         <a class="text-center nav-link" href="/logout">Log out</a>
@@ -66,8 +61,7 @@
         
             <% } else { %>
         
-                <div class="header-nav-options player-username
-                    col-4 col-md-6">
+                <div class="header-nav-options player-username col-4 col-sm-8 col-md-6 col-lg-7 col-xl-8">
 
                     <div class="d-none d-sm-block"></div>
 
@@ -75,8 +69,7 @@
 
                 </div>
         
-                <div class="header-nav-options
-                    col-4 col-md-3">
+                <div class="header-nav-options col-4 col-sm-2 col-md-3 col-lg-2 col-xl-2">
 
                     <div class="second-link d-none d-md-block">
                         <a class="nav-link second-btn" href="/login">Log in</a>
@@ -90,8 +83,7 @@
 
                 </div>
         
-                <div class="header-nav-options
-                    col-4 col-md-3">
+                <div class="header-nav-options col-4 col-sm-2 col-md-3 col-lg-3 col-xl-2">
 
                     <div class="header-button signup-btn d-none d-md-block">
                         <a class="text-center nav-link" href="/signup">Sign up</a>

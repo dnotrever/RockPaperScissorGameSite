@@ -1,6 +1,5 @@
 .profile-page {
   color: #444;
-  margin-top: 2rem;
 }
 .profile-page .profile-aside {
   padding: 0.5rem 0;
@@ -53,6 +52,9 @@
 }
 
 @media (max-width: 575px) {
+  .profile-page {
+    margin-top: 3rem;
+  }
   .profile-title h2 {
     font-size: 1.4rem;
   }
@@ -75,6 +77,7 @@
 @media (min-width: 576px) {
   .profile-page {
     width: 25rem;
+    margin-top: 4rem;
   }
   .profile-stats {
     margin-top: 1rem;

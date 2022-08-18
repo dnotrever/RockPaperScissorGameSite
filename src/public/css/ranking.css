@@ -1,6 +1,5 @@
 .ranking-page {
   color: #444;
-  margin-top: 2rem;
 }
 .ranking-page .ranking-title {
   padding: 0.5rem 0;
@@ -38,6 +37,7 @@
 @media (max-width: 575px) {
   .ranking-page {
     width: 20rem;
+    margin-top: 3rem;
   }
   .head-player {
     width: 45%;
@@ -58,6 +58,9 @@
   }
 }
 @media (max-width: 4000px) {
+  .ranking-page {
+    margin-top: 4rem;
+  }
   .ranking-title h2 {
     font-size: 1.4rem;
   }

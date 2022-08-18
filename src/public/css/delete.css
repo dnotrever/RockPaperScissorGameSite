@@ -1,6 +1,5 @@
 .delete-page {
   color: #444;
-  margin-top: 2rem;
   padding: 1rem;
 }
 .delete-page .delete-subtitle {
@@ -26,6 +25,9 @@
 }
 
 @media (max-width: 575px) {
+  .delete-page {
+    margin-top: 3rem;
+  }
   .delete-title h2 {
     font-size: 1.4rem;
   }
@@ -40,6 +42,9 @@
   }
 }
 @media (min-width: 576px) {
+  .delete-page {
+    margin-top: 4rem;
+  }
   .delete-title h2 {
     font-size: 1.3rem;
   }
