@@ -1,15 +1,23 @@
 var avatarSelect
 
-function selectAvatar(avatar) {
+function selectAvatar(element) {
 
-    avatarSelect = avatar
+    avatarSelect = element.id
 
-    const avatars = document.querySelector('.avatars-list')
-    const selected = document.querySelector(`.${avatarSelect}`)
+    console.log(avatarSelect)
 
-    selected.classList.toggle('selected')
-    avatars.classList.toggle('blocked')
-    
+    const avatarList = document.querySelector(".avatar-list")
+
+    for (const [key, value] of Object.entries(avatarList.children)) {
+        value.id = ""
+    }
+
+    element.parentNode.id = "selected"
+
+    for (const [key, value] of Object.entries(avatarList.children)) {
+        console.log(value)
+    }
+
 }
 
 const playerId = document.querySelector('.player-id')
@@ -27,12 +35,12 @@ button.addEventListener('click', async event => {
         await fetch('/avatar', {
             method: 'POST',
             body: JSON.stringify({ id, avatar }),
-            headers: {'Content-Type':'application/json'}
+            headers: { 'Content-Type': 'application/json' }
         })
 
         location.assign('/profile')
 
-    } 
+    }
 
     catch (err) { console.log(err) }
 

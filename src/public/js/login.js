@@ -23,7 +23,7 @@ form.addEventListener('submit', async event => {
 
         const data = await res.json()
 
-        usernameError.textContent = data.username
+        usernameError.textContent = data.username || data.alreadyLogged
         passwordError.textContent = data.password
 
         if (data.player) {

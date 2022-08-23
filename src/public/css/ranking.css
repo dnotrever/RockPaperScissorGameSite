@@ -36,8 +36,7 @@
 }
 @media (max-width: 575px) {
   .ranking-page {
-    width: 20rem;
-    margin-top: 3rem;
+    width: 18rem;
   }
   .head-player {
     width: 45%;
@@ -68,7 +67,7 @@
     font-size: 0.8rem;
   }
   .ranking-table tbody {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .ranking-descrip ul {
     font-size: 0.6rem;

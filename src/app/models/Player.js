@@ -39,17 +39,21 @@ const playerSchema = new mongoose.Schema({
 })
 
 playerSchema.pre('save', async function(next) {
+
     try {
         const salt = await bcrypt.genSalt()
         this.password = await bcrypt.hash(this.password, salt)
         next()
     }
+
     catch (err) {
         console.log(err)
     }
+
 })
 
 playerSchema.pre('updateOne', async function(next) {
+
     try {
         if (this._update.password) {
             const salt = await bcrypt.genSalt()
@@ -57,13 +61,17 @@ playerSchema.pre('updateOne', async function(next) {
         }
         next()
     }
+
     catch (err) {
         console.log(err)
     }
+
 })
 
 playerSchema.statics.login = async function(username, password) {
+
     const player = await this.findOne({ username: username })
+
     if (player) {
         const auth = await bcrypt.compare(password, player.password)
         if (auth) {
@@ -71,6 +79,7 @@ playerSchema.statics.login = async function(username, password) {
         }
         throw Error('incorrect password')
     }
+
     throw Error('incorrect username')
 }
 

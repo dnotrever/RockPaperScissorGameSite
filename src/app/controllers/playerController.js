@@ -2,6 +2,8 @@ require('dotenv').config()
 const jwt = require('jsonwebtoken')
 const playerModel = require('../models/Player')
 
+const playersLogged = []
+
 class PlayerController {
 
     handleErrors = err => {
@@ -41,9 +43,7 @@ class PlayerController {
     }
 
     createToken = id => {
-        return jwt.sign({ id },
-            process.env.SECRET,
-            { expiresIn: 3600000 })
+        return jwt.sign({ id }, process.env.SECRET)
     }
 
     async playerSignup(req, res) {
@@ -58,7 +58,7 @@ class PlayerController {
 
             const token = new PlayerController().createToken(player._id)
 
-            res.cookie('jwt', token, { httpOnly: true, maxAge: 3600000 })
+            res.cookie('jwt', token, { httpOnly: true })
 
             res.status(201).json({ player: player._id })
 
@@ -84,7 +84,7 @@ class PlayerController {
 
             const token = new PlayerController().createToken(player._id)
 
-            res.cookie('jwt', token, { httpOnly: true, maxAge: 3600000 })
+            res.cookie('jwt', token, { httpOnly: true })
 
             res.status(201).json({ player: player._id })
 

@@ -1,17 +1,15 @@
 .avatar-page
     // border: 3px solid indigo
 
-    .blocked
-        pointer-events: none
-
     .avatar-list
         // border: 3px solid blue
         padding: 1rem
 
         .player-avatar
             // border: 3px solid green
-            display: flex
             height: 8rem
+            
+            display: flex
             flex-direction: column
             justify-content: center
             align-items: center
@@ -20,11 +18,7 @@
                 // border: 3px solid yellow
                 cursor: pointer
                 opacity: .5
-                transition: .3s
-
-            img:hover
-                opacity: 1
-                pointer-events: auto
+                transition: .2s
 
     .avatar-button
         // border: 3px solid blue
@@ -48,24 +42,40 @@
 @media (max-width: 575px)
 
     .avatar-page
-        margin-top: 3rem
+        margin-top: 2rem
 
-    .player-avatar img
+    .avatar-list
+        width: 20rem
+
+    .player-avatar
+        width: 4rem
+        margin: .5rem
+
+    .avatar-list .player-avatar img
         width: 70px
 
-    .player-avatar img:hover
+    .avatar-list .player-avatar img:hover
         width: 80px
+        opacity: 1
 		
     .avatar-button button
         font-size: 0.8rem
 
 @media (min-width: 576px)
 
-    .player-avatar img
+    .player-avatar
+        width: 8rem
+
+    .avatar-list .player-avatar img
         width: 80px
 
-    .player-avatar img:hover
+    .avatar-list .player-avatar img:hover
         width: 90px
-		
+        opacity: 1
+
+    #selected img
+        width: 90px
+        opacity: 1
+
     .avatar-button button
         font-size: 0.8rem
